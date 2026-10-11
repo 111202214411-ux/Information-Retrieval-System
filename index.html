@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rak Buku — Mesin Pencarian Judul Buku</title>
+  <meta name="description" content="Mesin pencarian judul buku dengan TF-IDF dan cosine similarity.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <h1 class="masthead__title">Rak Buku</h1>
+      <p class="masthead__lead">Ketik huruf awal judul atau kata dari judul buku. Hasilnya diurutkan menurut kemiripan dengan kata kuncimu, lalu ambil bukunya dari rak untuk melihat sampul dan keterangannya.</p>
+
+      <form class="search" role="search" id="searchForm" autocomplete="off">
+        <label class="visually-hidden" for="searchInput">Kata kunci judul buku</label>
+        <svg class="search__icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <input class="search__input" id="searchInput" type="search"
+               placeholder="Contoh: hujan bulan" spellcheck="false">
+        <button class="search__clear" id="clearBtn" type="button" aria-label="Hapus pencarian" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </form>
+      <p class="status" id="status" aria-live="polite"></p>
+    </header>
+
+    <main class="library">
+      <section class="bookcase" aria-label="Hasil pencarian">
+        <div class="shelf" id="shelf"></div>
+        <div class="empty" id="empty" hidden>
+          <p class="empty__title" id="emptyTitle">Belum ada judul yang relevan.</p>
+          <p class="empty__text">Tidak ada judul yang diawali teks ini atau memuat kata ini. Coba kata lain dari judul, misalnya <button type="button" class="link-btn" data-suggest="hujan">hujan</button> atau <button type="button" class="link-btn" data-suggest="bumi manusia">bumi manusia</button>.</p>
+        </div>
+      </section>
+
+      <aside class="detail" id="detail" aria-live="polite" tabindex="-1">
+        <div class="detail__placeholder" id="placeholder">
+          <div class="placeholder-book" aria-hidden="true"></div>
+          <p>Pilih buku dari rak untuk melihat sampul dan keterangannya.</p>
+        </div>
+
+        <article class="book" id="book" hidden>
+          <figure class="book__cover" id="cover">
+            <div class="cover-art" id="coverArt">
+              <span class="cover-art__title" id="coverTitle"></span>
+              <span class="cover-art__rule"></span>
+              <span class="cover-art__author" id="coverAuthor"></span>
+            </div>
+          </figure>
+
+          <div class="book__info">
+            <p class="book__rank" id="bookRank" hidden></p>
+            <h2 class="book__title" id="bookTitle"></h2>
+            <dl class="facts">
+              <div class="facts__row"><dt>Nama buku</dt><dd id="fJudul"></dd></div>
+              <div class="facts__row"><dt>Pengarang</dt><dd id="fPengarang"></dd></div>
+              <div class="facts__row"><dt>Genre</dt><dd id="fGenre" class="tags"></dd></div>
+              <div class="facts__row"><dt>Tahun terbit</dt><dd id="fTahun"></dd></div>
+              <div class="facts__row"><dt>Penerbit</dt><dd id="fPenerbit"></dd></div>
+            </dl>
+            <button type="button" class="return-btn" id="returnBtn">Kembalikan ke rak</button>
+          </div>
+        </article>
+      </aside>
+    </main>
+
+    <!-- Tahapan temu kembali untuk query yang sedang diketik -->
+    <section class="process" aria-labelledby="processTitle">
+      <h2 class="process__title" id="processTitle">Cara hasil ini ditemukan</h2>
+      <p class="process__intro" id="processIntro"></p>
+      <ol class="steps" id="steps" hidden></ol>
+
+      <details class="index-view">
+        <summary>Lihat indeks terbalik <span id="indexMeta"></span></summary>
+        <div class="table-wrap">
+          <table class="data-table" id="indexTable">
+            <thead>
+              <tr><th scope="col">Term</th><th scope="col" class="num">df</th><th scope="col" class="num">idf</th><th scope="col">Muncul di judul</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </details>
+    </section>
+
+    <footer class="footnote">
+      Sampul diambil dari folder <code>covers/</code>. Jika gambarnya belum ada, sampul sederhana dibuat otomatis.
+    </footer>
+  </div>
+
+  <script src="data.js?v=5"></script>
+  <script src="ir.js?v=5"></script>
+  <script src="script.js?v=5"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* =========================================================
+   data.js — Koleksi dokumen (korpus) untuk mesin pencarian
+   ---------------------------------------------------------
+   Setiap buku = satu dokumen. Yang diindeks adalah "judul".
+   "cover" = nama file gambar di folder covers/ (opsional).
+   Catatan: data contoh, periksa kembali tahun & penerbit
+   sebelum dipakai sebagai acuan.
+   ========================================================= */
+
+const BOOKS = [
+  { judul: "Laskar Pelangi", pengarang: "Andrea Hirata", genre: ["Novel", "Drama"], tahun: 2005, penerbit: "Bentang Pustaka", cover: "laskar_pelangi.jpg" },
+  { judul: "Sang Pemimpi", pengarang: "Andrea Hirata", genre: ["Novel", "Drama"], tahun: 2006, penerbit: "Bentang Pustaka", cover: "sang_pemimpi.jpg" },
+  { judul: "Edensor", pengarang: "Andrea Hirata", genre: ["Novel", "Petualangan"], tahun: 2007, penerbit: "Bentang Pustaka", cover: "edensor.jpg" },
+  { judul: "Maryamah Karpov", pengarang: "Andrea Hirata", genre: ["Novel", "Drama"], tahun: 2008, penerbit: "Bentang Pustaka", cover: "maryamah_karpov.jpg" },
+  { judul: "Orang-Orang Biasa", pengarang: "Andrea Hirata", genre: ["Novel", "Komedi"], tahun: 2019, penerbit: "Bentang Pustaka", cover: "orang_orang_biasa.jpg" },
+
+  { judul: "Bumi Manusia", pengarang: "Pramoedya Ananta Toer", genre: ["Novel", "Sejarah"], tahun: 1980, penerbit: "Hasta Mitra", cover: "bumi_manusia.jpg" },
+  { judul: "Anak Semua Bangsa", pengarang: "Pramoedya Ananta Toer", genre: ["Novel", "Sejarah"], tahun: 1980, penerbit: "Hasta Mitra", cover: "anak_semua_bangsa.jpg" },
+  { judul: "Jejak Langkah", pengarang: "Pramoedya Ananta Toer", genre: ["Novel", "Sejarah"], tahun: 1985, penerbit: "Hasta Mitra", cover: "jejak_langkah.jpg" },
+  { judul: "Rumah Kaca", pengarang: "Pramoedya Ananta Toer", genre: ["Novel", "Sejarah"], tahun: 1988, penerbit: "Hasta Mitra", cover: "rumah_kaca.jpg" },
+  { judul: "Gadis Pantai", pengarang: "Pramoedya Ananta Toer", genre: ["Novel", "Sejarah"], tahun: 1987, penerbit: "Hasta Mitra", cover: "gadis_pantai.jpg" },
+
+  { judul: "Ronggeng Dukuh Paruk", pengarang: "Ahmad Tohari", genre: ["Novel", "Drama"], tahun: 1982, penerbit: "Gramedia Pustaka Utama", cover: "ronggeng_dukuh_paruk.jpg" },
+  { judul: "Negeri 5 Menara", pengarang: "Ahmad Fuadi", genre: ["Novel", "Inspiratif"], tahun: 2009, penerbit: "Gramedia Pustaka Utama", cover: "negeri_5_menara.jpg" },
+  { judul: "Ranah 3 Warna", pengarang: "Ahmad Fuadi", genre: ["Novel", "Inspiratif"], tahun: 2011, penerbit: "Gramedia Pustaka Utama", cover: "ranah_3_warna.jpg" },
+  { judul: "Rantau 1 Muara", pengarang: "Ahmad Fuadi", genre: ["Novel", "Inspiratif"], tahun: 2013, penerbit: "Gramedia Pustaka Utama", cover: "rantau_1_muara.jpg" },
+
+  { judul: "Perahu Kertas", pengarang: "Dee Lestari", genre: ["Novel", "Romansa"], tahun: 2009, penerbit: "Bentang Pustaka", cover: "perahu_kertas.jpg" },
+  { judul: "Supernova: Ksatria, Puteri, dan Bintang Jatuh", pengarang: "Dee Lestari", genre: ["Novel", "Fiksi ilmiah"], tahun: 2001, penerbit: "Truedee Books", cover: "supernova_kpbj.jpg" },
+
+  { judul: "Ayat-Ayat Cinta", pengarang: "Habiburrahman El Shirazy", genre: ["Novel", "Religi"], tahun: 2004, penerbit: "Republika", cover: "ayat_ayat_cinta.jpg" },
+  { judul: "Ayat-Ayat Cinta 2", pengarang: "Habiburrahman El Shirazy", genre: ["Novel", "Religi"], tahun: 2015, penerbit: "Republika", cover: "ayat_ayat_cinta_2.jpg" },
+
+  { judul: "Pulang", pengarang: "Tere Liye", genre: ["Novel", "Aksi"], tahun: 2015, penerbit: "Republika", cover: "pulang_tere_liye.jpg" },
+  { judul: "Pulang", pengarang: "Leila S. Chudori", genre: ["Novel", "Sejarah"], tahun: 2012, penerbit: "Kepustakaan Populer Gramedia", cover: "pulang_leila_chudori.jpg" },
+  { judul: "Laut Bercerita", pengarang: "Leila S. Chudori", genre: ["Novel", "Sejarah"], tahun: 2017, penerbit: "Kepustakaan Populer Gramedia", cover: "laut_bercerita.jpg" },
+
+  { judul: "Hujan", pengarang: "Tere Liye", genre: ["Novel", "Fiksi ilmiah"], tahun: 2016, penerbit: "Gramedia Pustaka Utama", cover: "hujan.jpg" },
+  { judul: "Bumi", pengarang: "Tere Liye", genre: ["Novel", "Fantasi"], tahun: 2014, penerbit: "Gramedia Pustaka Utama", cover: "bumi.jpg" },
+  { judul: "Bulan", pengarang: "Tere Liye", genre: ["Novel", "Fantasi"], tahun: 2015, penerbit: "Gramedia Pustaka Utama", cover: "bulan.jpg" },
+  { judul: "Matahari", pengarang: "Tere Liye", genre: ["Novel", "Fantasi"], tahun: 2016, penerbit: "Gramedia Pustaka Utama", cover: "matahari.jpg" },
+  { judul: "Rindu", pengarang: "Tere Liye", genre: ["Novel", "Religi"], tahun: 2014, penerbit: "Republika", cover: "rindu.jpg" },
+  { judul: "Hujan Bulan Juni", pengarang: "Sapardi Djoko Damono", genre: ["Novel", "Romansa"], tahun: 2015, penerbit: "Gramedia Pustaka Utama", cover: "hujan_bulan_juni.jpg" },
+
+  { judul: "Dilan: Dia adalah Dilanku Tahun 1990", pengarang: "Pidi Baiq", genre: ["Novel", "Romansa"], tahun: 2014, penerbit: "Pastel Books", cover: "dilan_1990.jpg" },
+  { judul: "Dilan: Dia adalah Dilanku Tahun 1991", pengarang: "Pidi Baiq", genre: ["Novel", "Romansa"], tahun: 2015, penerbit: "Pastel Books", cover: "dilan_1991.jpg" },
+  { judul: "Milea: Suara dari Dilan", pengarang: "Pidi Baiq", genre: ["Novel", "Romansa"], tahun: 2016, penerbit: "Pastel Books", cover: "milea.jpg" },
+
+  { judul: "Siti Nurbaya", pengarang: "Marah Rusli", genre: ["Novel", "Klasik"], tahun: 1922, penerbit: "Balai Pustaka", cover: "siti_nurbaya.jpg" },
+  { judul: "Salah Asuhan", pengarang: "Abdoel Moeis", genre: ["Novel", "Klasik"], tahun: 1928, penerbit: "Balai Pustaka", cover: "salah_asuhan.jpg" },
+  { judul: "Layar Terkembang", pengarang: "Sutan Takdir Alisjahbana", genre: ["Novel", "Klasik"], tahun: 1936, penerbit: "Balai Pustaka", cover: "layar_terkembang.jpg" },
+  { judul: "Di Bawah Lindungan Ka'bah", pengarang: "Hamka", genre: ["Novel", "Klasik", "Religi"], tahun: 1938, penerbit: "Balai Pustaka", cover: "di_bawah_lindungan_kabah.jpg" },
+  { judul: "Atheis", pengarang: "Achdiat K. Mihardja", genre: ["Novel", "Klasik"], tahun: 1949, penerbit: "Balai Pustaka", cover: "atheis.jpg" },
+
+  { judul: "Saman", pengarang: "Ayu Utami", genre: ["Novel", "Drama"], tahun: 1998, penerbit: "Kepustakaan Populer Gramedia", cover: "saman.jpg" },
+  { judul: "Gadis Kretek", pengarang: "Ratih Kumala", genre: ["Novel", "Sejarah"], tahun: 2012, penerbit: "Gramedia Pustaka Utama", cover: "gadis_kretek.jpg" },
+  { judul: "Lelaki Harimau", pengarang: "Eka Kurniawan", genre: ["Novel", "Drama"], tahun: 2004, penerbit: "Gramedia Pustaka Utama", cover: "lelaki_harimau.jpg" },
+  { judul: "Amba", pengarang: "Laksmi Pamuntjak", genre: ["Novel", "Sejarah"], tahun: 2012, penerbit: "Gramedia Pustaka Utama", cover: "amba.jpg" },
+
+  { judul: "5 cm", pengarang: "Donny Dhirgantoro", genre: ["Novel", "Petualangan"], tahun: 2005, penerbit: "Grasindo", cover: "5_cm.jpg" },
+  { judul: "Sabtu Bersama Bapak", pengarang: "Adhitya Mulya", genre: ["Novel", "Keluarga"], tahun: 2014, penerbit: "GagasMedia", cover: "sabtu_bersama_bapak.jpg" },
+  { judul: "Koala Kumal", pengarang: "Raditya Dika", genre: ["Komedi"], tahun: 2015, penerbit: "GagasMedia", cover: "koala_kumal.jpg" },
+  { judul: "Marmut Merah Jambu", pengarang: "Raditya Dika", genre: ["Komedi"], tahun: 2010, penerbit: "Bukune", cover: "marmut_merah_jambu.jpg" },
+  { judul: "Habibie & Ainun", pengarang: "B.J. Habibie", genre: ["Memoar", "Romansa"], tahun: 2010, penerbit: "THC Mandiri", cover: "habibie_ainun.jpg" },
+
+  // ---- Sastra klasik dunia ----
+  // Tahun & penerbit = terbitan pertama karya aslinya (bukan edisi terjemahan).
+  { judul: "The Brothers Karamazov", pengarang: "Fyodor Dostoevsky", genre: ["Novel", "Klasik", "Filsafat"], tahun: 1880, penerbit: "The Russian Messenger", cover: "the_brothers_karamazov.jpg" },
+  { judul: "Crime and Punishment", pengarang: "Fyodor Dostoevsky", genre: ["Novel", "Klasik", "Psikologis"], tahun: 1866, penerbit: "The Russian Messenger", cover: "crime_and_punishment.jpg" },
+  { judul: "The Idiot", pengarang: "Fyodor Dostoevsky", genre: ["Novel", "Klasik"], tahun: 1869, penerbit: "The Russian Messenger", cover: "the_idiot.jpg" },
+  { judul: "Notes from Underground", pengarang: "Fyodor Dostoevsky", genre: ["Novela", "Klasik", "Filsafat"], tahun: 1864, penerbit: "Epoch", cover: "notes_from_underground.jpg" },
+  { judul: "No Longer Human", pengarang: "Osamu Dazai", genre: ["Novel", "Klasik", "Psikologis"], tahun: 1948, penerbit: "Chikuma Shobō", cover: "no_longer_human.jpg" },
+  { judul: "The Setting Sun", pengarang: "Osamu Dazai", genre: ["Novel", "Klasik"], tahun: 1947, penerbit: "Shinchōsha", cover: "the_setting_sun.jpg" },
+  { judul: "Rashomon", pengarang: "Ryūnosuke Akutagawa", genre: ["Cerpen", "Klasik"], tahun: 1915, penerbit: "Teikoku Bungaku", cover: "rashomon.jpg" },
+  { judul: "Kokoro", pengarang: "Natsume Sōseki", genre: ["Novel", "Klasik"], tahun: 1914, penerbit: "Iwanami Shoten", cover: "kokoro.jpg" },
+  { judul: "Norwegian Wood", pengarang: "Haruki Murakami", genre: ["Novel", "Romansa"], tahun: 1987, penerbit: "Kodansha", cover: "norwegian_wood.jpg" },
+  { judul: "Kafka on the Shore", pengarang: "Haruki Murakami", genre: ["Novel", "Realisme magis"], tahun: 2002, penerbit: "Shinchōsha", cover: "kafka_on_the_shore.jpg" },
+  { judul: "The Metamorphosis", pengarang: "Franz Kafka", genre: ["Novela", "Klasik", "Absurdisme"], tahun: 1915, penerbit: "Kurt Wolff Verlag", cover: "the_metamorphosis.jpg" },
+  { judul: "The Trial", pengarang: "Franz Kafka", genre: ["Novel", "Klasik", "Absurdisme"], tahun: 1925, penerbit: "Verlag Die Schmiede", cover: "the_trial.jpg" },
+  { judul: "The Stranger", pengarang: "Albert Camus", genre: ["Novel", "Klasik", "Absurdisme"], tahun: 1942, penerbit: "Gallimard", cover: "the_stranger.jpg" },
+  { judul: "1984", pengarang: "George Orwell", genre: ["Novel", "Klasik", "Distopia"], tahun: 1949, penerbit: "Secker & Warburg", cover: "1984.jpg" },
+  { judul: "Animal Farm", pengarang: "George Orwell", genre: ["Novela", "Klasik", "Satire"], tahun: 1945, penerbit: "Secker & Warburg", cover: "animal_farm.jpg" },
+  { judul: "The Old Man and the Sea", pengarang: "Ernest Hemingway", genre: ["Novela", "Klasik"], tahun: 1952, penerbit: "Charles Scribner's Sons", cover: "the_old_man_and_the_sea.jpg" },
+  { judul: "The Great Gatsby", pengarang: "F. Scott Fitzgerald", genre: ["Novel", "Klasik"], tahun: 1925, penerbit: "Charles Scribner's Sons", cover: "the_great_gatsby.jpg" },
+  { judul: "Pride and Prejudice", pengarang: "Jane Austen", genre: ["Novel", "Klasik", "Romansa"], tahun: 1813, penerbit: "Thomas Egerton", cover: "pride_and_prejudice.jpg" },
+  { judul: "Frankenstein", pengarang: "Mary Shelley", genre: ["Novel", "Klasik", "Horor"], tahun: 1818, penerbit: "Lackington, Hughes, Harding, Mavor & Jones", cover: "frankenstein.jpg" },
+  { judul: "The Picture of Dorian Gray", pengarang: "Oscar Wilde", genre: ["Novel", "Klasik"], tahun: 1890, penerbit: "Lippincott's Monthly Magazine", cover: "the_picture_of_dorian_gray.jpg" },
+  { judul: "Les Misérables", pengarang: "Victor Hugo", genre: ["Novel", "Klasik", "Sejarah"], tahun: 1862, penerbit: "A. Lacroix, Verboeckhoven & Cie", cover: "les_miserables.jpg" },
+  { judul: "Don Quixote", pengarang: "Miguel de Cervantes", genre: ["Novel", "Klasik", "Satire"], tahun: 1605, penerbit: "Francisco de Robles", cover: "don_quixote.jpg" },
+  { judul: "Moby-Dick", pengarang: "Herman Melville", genre: ["Novel", "Klasik", "Petualangan"], tahun: 1851, penerbit: "Harper & Brothers", cover: "moby_dick.jpg" },
+  { judul: "Demian", pengarang: "Hermann Hesse", genre: ["Novel", "Klasik"], tahun: 1919, penerbit: "S. Fischer Verlag", cover: "demian.jpg" },
+  { judul: "Siddhartha", pengarang: "Hermann Hesse", genre: ["Novel", "Klasik", "Filsafat"], tahun: 1922, penerbit: "S. Fischer Verlag", cover: "siddhartha.jpg" },
+  { judul: "The Little Prince", pengarang: "Antoine de Saint-Exupéry", genre: ["Novela", "Klasik", "Fabel"], tahun: 1943, penerbit: "Reynal & Hitchcock", cover: "the_little_prince.jpg" },
+
+  // ---- Manga ----
+  // Tahun & penerbit = awal serialisasi di Jepang.
+  { judul: "Berserk", pengarang: "Kentaro Miura", genre: ["Manga", "Seinen", "Dark fantasy"], tahun: 1989, penerbit: "Hakusensha", cover: "berserk.jpg" },
+  { judul: "Vagabond", pengarang: "Takehiko Inoue", genre: ["Manga", "Seinen", "Sejarah"], tahun: 1998, penerbit: "Kodansha", cover: "vagabond.jpg" },
+  { judul: "Slam Dunk", pengarang: "Takehiko Inoue", genre: ["Manga", "Shōnen", "Olahraga"], tahun: 1990, penerbit: "Shueisha", cover: "slam_dunk.jpg" },
+  { judul: "Real", pengarang: "Takehiko Inoue", genre: ["Manga", "Seinen", "Olahraga"], tahun: 1999, penerbit: "Shueisha", cover: "real.jpg" },
+  { judul: "Monster", pengarang: "Naoki Urasawa", genre: ["Manga", "Seinen", "Thriller"], tahun: 1994, penerbit: "Shogakukan", cover: "monster.jpg" },
+  { judul: "Akira", pengarang: "Katsuhiro Otomo", genre: ["Manga", "Seinen", "Fiksi ilmiah"], tahun: 1982, penerbit: "Kodansha", cover: "akira.jpg" },
+  { judul: "Vinland Saga", pengarang: "Makoto Yukimura", genre: ["Manga", "Seinen", "Sejarah"], tahun: 2005, penerbit: "Kodansha", cover: "vinland_saga.jpg" },
+  { judul: "One Piece", pengarang: "Eiichiro Oda", genre: ["Manga", "Shōnen", "Petualangan"], tahun: 1997, penerbit: "Shueisha", cover: "one_piece.jpg" },
+  { judul: "Dragon Ball", pengarang: "Akira Toriyama", genre: ["Manga", "Shōnen", "Aksi"], tahun: 1984, penerbit: "Shueisha", cover: "dragon_ball.jpg" },
+  { judul: "Naruto", pengarang: "Masashi Kishimoto", genre: ["Manga", "Shōnen", "Aksi"], tahun: 1999, penerbit: "Shueisha", cover: "naruto.jpg" },
+  { judul: "Death Note", pengarang: "Tsugumi Ohba & Takeshi Obata", genre: ["Manga", "Shōnen", "Thriller"], tahun: 2003, penerbit: "Shueisha", cover: "death_note.jpg" },
+  { judul: "Attack on Titan", pengarang: "Hajime Isayama", genre: ["Manga", "Shōnen", "Dark fantasy"], tahun: 2009, penerbit: "Kodansha", cover: "attack_on_titan.jpg" },
+];
+
+if (typeof module !== "undefined") module.exports = BOOKS;
