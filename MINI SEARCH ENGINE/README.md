@@ -13,8 +13,6 @@ This project was built for **Session 1: Introduction to Information Retrieval** 
 
 ![Search results](docs/search-results.png)
 
----
-
 ## Table of contents
 
 - [Features](#features)
