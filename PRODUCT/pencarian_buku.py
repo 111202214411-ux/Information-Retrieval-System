@@ -19,7 +19,7 @@ except ImportError:  # cadangan: hasil diperbarui setelah Enter
 BASE_DIR = Path(__file__).parent
 COVER_DIR = BASE_DIR / "covers"
 
-st.set_page_config(page_title="Rak Buku — Pencarian Judul Buku", page_icon="📚", layout="wide")
+st.set_page_config(page_title="Rak Buku: Pencarian Judul Buku", page_icon="📚", layout="wide")
 
 # Warna kain sampul untuk punggung buku & sampul pengganti
 BINDINGS = [
