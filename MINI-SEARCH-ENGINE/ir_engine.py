@@ -1,18 +1,3 @@
-"""
-ir_engine.py: a small Information Retrieval engine.
-
-This module does not depend on Streamlit, so it can be reused in a notebook
-or tested from the terminal. It contains:
-
-1. Preprocessing   : case folding -> tokenization -> stopword removal
-2. Inverted index  : term -> posting list [(book_id, tf), ...]
-3. Three models    : Boolean, TF-IDF + Cosine Similarity, BM25
-
-Usage from the terminal:
-    python ir_engine.py "search engine ranking"
-    python ir_engine.py "programming AND NOT java" --model boolean
-"""
-
 from __future__ import annotations
 
 import argparse
