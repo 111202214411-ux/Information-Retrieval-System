@@ -8,12 +8,7 @@ ordered by relevance. Click a book to see its cover and details.
 This project was built for the **Information Retrieval Systems** course
 (*Sistem Temu Kembali Informasi*, STKI).
 
-🔗 **Live demo:**
-
-
-
-
----
+🔗 **Live demo:** https://information-retrieval-system-kzqtwhfxy6mnmgcp8ns7el.streamlit.app/
 
 ## Table of contents
 
@@ -57,12 +52,15 @@ This project was built for the **Information Retrieval Systems** course
 
 | Search results | Book details |
 |---|---|
-|  |  |
+| <img width="1366" height="768" alt="search-results" src="https://github.com/user-attachments/assets/962cd0ee-d8a1-43e0-a834-d07dceafee1f" /> <img width="1366" height="768" alt="book-details" src="https://github.com/user-attachments/assets/3f5693db-d79a-4283-8fa5-adc8f073fe02" />
 
 <details>
+  
 <summary><b>Retrieval steps shown in the app</b></summary>
 
+<img width="1366" height="768" alt="retrieval-steps1" src="https://github.com/user-attachments/assets/04157b79-9a2d-4d1a-b61b-dd4636a5c9ea" />
 
+<img width="1366" height="768" alt="retrieval-steps2" src="https://github.com/user-attachments/assets/3b2a913b-765b-4518-b46c-2416da29cb7e" />
 
 </details>
 
