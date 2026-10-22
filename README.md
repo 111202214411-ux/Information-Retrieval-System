@@ -8,7 +8,7 @@ ordered by relevance. Click a book to see its cover and details.
 This project was built for the **Information Retrieval Systems** course
 (*Sistem Temu Kembali Informasi*, STKI).
 
-🔗 **Live demo:** [REPLACE_WITH_STREAMLIT_LINK](https://REPLACE_WITH_STREAMLIT_LINK.streamlit.app)
+🔗 **Live demo:** https://information-retrieval-system-lnbaxt2vkenhhb3qnnhyvr.streamlit.app/
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.66-FF4B4B?logo=streamlit&logoColor=white)
