@@ -1,19 +1,3 @@
-"""
-Rak Buku — Mesin Pencarian Judul Buku (Streamlit)
-=================================================
-Tugas Sistem Temu Kembali Informasi (STKI).
-
-- Mesin temu kembali (preprocessing, indeks terbalik, TF-IDF, cosine similarity)
-  ada di ir.py; file ini hanya mengurus tampilan.
-- Korpus dokumen ada di buku.json (yang diindeks: teks judul buku).
-- Sampul asli diletakkan di folder covers/ sesuai field "cover". Jika belum ada,
-  sampul sederhana dibuat otomatis.
-
-Menjalankan di komputer sendiri:
-    pip install -r requirements.txt
-    streamlit run pencarian_buku.py
-"""
-
 from __future__ import annotations
 
 import html
