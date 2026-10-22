@@ -1,4 +1,4 @@
-# 📚 Bookshelf — Book Title Search Engine
+# 📚 Bookshelf: Book Title Search Engine
 
 A book title search engine built on **Information Retrieval** principles, using the
 **Vector Space Model (TF-IDF + Cosine Similarity)**, written in Python with Streamlit.
@@ -10,13 +10,11 @@ This project was built for the **Information Retrieval Systems** course
 
 🔗 **Live demo:** [REPLACE_WITH_STREAMLIT_LINK](https://REPLACE_WITH_STREAMLIT_LINK.streamlit.app)
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.66-FF4B4B?logo=streamlit&logoColor=white)
-![Method](https://img.shields.io/badge/Method-TF--IDF%20%2B%20Cosine%20Similarity-2F5D50)
 
 ![Bookshelf view](docs/bookshelf.png)
 
----
+
+
 
 ## Table of contents
 
@@ -62,7 +60,7 @@ This project was built for the **Information Retrieval Systems** course
 <details>
 <summary><b>Retrieval steps shown in the app</b></summary>
 
-![Retrieval steps](docs/retrieval-steps.png)
+<img width="940" height="1397" alt="retrieval-steps" src="https://github.com/user-attachments/assets/ad5a3ba9-ca9e-43b0-95a8-0a7b8748e488" />
 
 </details>
 
