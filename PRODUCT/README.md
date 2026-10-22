@@ -24,7 +24,6 @@ This project was built for the **Information Retrieval Systems** course
 - [Limitations](#limitations)
 - [References](#references)
 
----
 
 ## Features
 
