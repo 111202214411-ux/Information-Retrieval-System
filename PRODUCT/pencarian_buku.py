@@ -1,18 +1,3 @@
-"""
-Bookshelf — Book Title Search Engine (Streamlit)
-================================================
-Information Retrieval Systems course project.
-
-- The retrieval engine (preprocessing, inverted index, TF-IDF, cosine similarity)
-  lives in ir.py; this file only handles the user interface.
-- The document collection is in books.json (the indexed field is the book title).
-- Cover images go in the covers/ folder, named after each book's "cover" field.
-  If an image is missing, a simple cover is generated automatically.
-
-Run locally:
-    pip install -r requirements.txt
-    streamlit run pencarian_buku.py
-"""
 
 from __future__ import annotations
 
@@ -35,7 +20,7 @@ except ImportError:  # fallback: results update after pressing Enter
 BASE_DIR = Path(__file__).parent
 COVER_DIR = BASE_DIR / "covers"
 
-st.set_page_config(page_title="Bookshelf — Book Title Search", page_icon="📚", layout="wide")
+st.set_page_config(page_title="Bookshelf: Book Title Search", page_icon="📚", layout="wide")
 
 # Cloth colors for book spines and generated covers: (background, text)
 BINDINGS = [
@@ -140,9 +125,11 @@ CSS = """
 
 .masthead h1 {
   font-family: var(--serif) !important; font-weight: 700; color: var(--ink);
-  font-size: clamp(2.6rem, 7vw, 4.25rem); line-height: 1; letter-spacing: -0.02em;
-  margin: 0; padding: 0;
+  font-size: clamp(2.6rem, 7vw, 4.25rem); line-height: 1.25 !important; letter-spacing: -0.02em;
+  margin: 0; padding: 0 !important; overflow: visible;
 }
+/* hide the link icon Streamlit adds next to headings */
+[data-testid="stHeaderActionElements"] { display: none !important; }
 .masthead p { margin: 14px 0 6px; max-width: 56ch; color: var(--ink-soft); font-size: 1.0625rem; }
 .status { color: var(--ink-soft); font-size: .9375rem; margin: -4px 2px 6px; }
 .status strong { color: var(--ink); font-weight: 600; }
