@@ -16,9 +16,11 @@ This project was built for the **Information Retrieval Systems** course
 
 ![Bookshelf view]
 
-<img width="1016" height="695" alt="bookshelf1" src="https://github.com/user-attachments/assets/64b675bd-2533-4026-8c2f-f7243228a702" />
+<img width="1366" height="768" alt="bookshelf4" src="https://github.com/user-attachments/assets/4c812fa9-b41f-4224-b7b9-884b3c26d5b8" />
+<img width="1366" height="768" alt="bookshelf3" src="https://github.com/user-attachments/assets/917ca4c5-dcd0-408f-97c6-ecd7b75ba294" />
+<img width="1366" height="768" alt="bookshelf2" src="https://github.com/user-attachments/assets/43973a67-7354-4ab7-9e3c-811e1d4e89a7" />
+<img width="1366" height="768" alt="bookshelf1" src="https://github.com/user-attachments/assets/c059c1c9-a6db-44ce-beff-8605d34a91f0" />
 
-<img width="1014" height="669" alt="bookshelf2" src="https://github.com/user-attachments/assets/f7a93663-f0c2-4e78-93b4-25c08d0af008" />
 
 
 
