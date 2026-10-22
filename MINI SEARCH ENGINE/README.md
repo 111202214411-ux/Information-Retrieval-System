@@ -11,10 +11,6 @@ This project was built for **Session 1: Introduction to Information Retrieval** 
 
 🔗 **Live demo:** [REPLACE_WITH_STREAMLIT_LINK](https://REPLACE_WITH_STREAMLIT_LINK.streamlit.app)
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.50%2B-FF4B4B?logo=streamlit&logoColor=white)
-![Models](https://img.shields.io/badge/Models-Boolean%20%C2%B7%20TF--IDF%20%C2%B7%20BM25-2F5D50)
-
 ![Search results](docs/search-results.png)
 
 ---
@@ -33,8 +29,6 @@ This project was built for **Session 1: Introduction to Information Retrieval** 
 - [Adding books](#adding-books)
 - [Limitations](#limitations)
 - [References](#references)
-
----
 
 ## Features
 
