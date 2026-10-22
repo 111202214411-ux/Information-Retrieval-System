@@ -52,7 +52,7 @@ This project was built for the **Information Retrieval Systems** course
 
 | Search results | Book details |
 |---|---|
-| <img width="1366" height="768" alt="search-results" src="https://github.com/user-attachments/assets/962cd0ee-d8a1-43e0-a834-d07dceafee1f" /> <img width="1366" height="768" alt="book-details" src="https://github.com/user-attachments/assets/3f5693db-d79a-4283-8fa5-adc8f073fe02" />
+| <img width="1366" height="768" alt="search-results" src="https://github.com/user-attachments/assets/962cd0ee-d8a1-43e0-a834-d07dceafee1f" /> | <img width="1366" height="768" alt="book-details" src="https://github.com/user-attachments/assets/3f5693db-d79a-4283-8fa5-adc8f073fe02" />
 
 <details>
   
