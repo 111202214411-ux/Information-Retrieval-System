@@ -16,13 +16,6 @@ This project was built for the **Information Retrieval Systems** course
 
 ![Bookshelf view]
 
-<img width="1366" height="768" alt="bookshelf4" src="https://github.com/user-attachments/assets/4c812fa9-b41f-4224-b7b9-884b3c26d5b8" />
-<img width="1366" height="768" alt="bookshelf3" src="https://github.com/user-attachments/assets/917ca4c5-dcd0-408f-97c6-ecd7b75ba294" />
-<img width="1366" height="768" alt="bookshelf2" src="https://github.com/user-attachments/assets/43973a67-7354-4ab7-9e3c-811e1d4e89a7" />
-<img width="1366" height="768" alt="bookshelf1" src="https://github.com/user-attachments/assets/c059c1c9-a6db-44ce-beff-8605d34a91f0" />
-
-
-
 
 > The app interface is in Indonesian (*Rak Buku* means "Bookshelf"). The search engine
 > handles both Indonesian and English titles.
