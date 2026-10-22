@@ -265,7 +265,7 @@ shows a simple generated cover with the title and author name.
 - The stemmer uses a root-word dictionary built specifically for this collection.
   Words outside the dictionary are not stemmed.
 - Partial matching is plain string matching: it does not use stemming and does not
-  affect cosine scores. Matches inside a word require at least 3 characters.
+  affect cosine scores. Matches inside a word require at least 2 characters.
 - Retrieval quality has not yet been evaluated with metrics such as precision, recall,
   or MAP.
 
