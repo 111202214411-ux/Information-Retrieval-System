@@ -260,9 +260,6 @@ shows a simple generated cover with the title and author name.
   almost always 1.
 - The stemmer uses a root-word dictionary built specifically for this collection.
   Words outside the dictionary are not stemmed.
-- Word matching uses whole words after stemming. Partial words in the middle of a title
-  (for example `asu` for *Salah Asuhan*) are not found unless they are at the start of
-  the title.
 - Retrieval quality has not yet been evaluated with metrics such as precision, recall,
   or MAP.
 
