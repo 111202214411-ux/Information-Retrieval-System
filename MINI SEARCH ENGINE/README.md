@@ -1,4 +1,4 @@
-# 📇 Retrieval Catalog — Mini Search Engine Lab
+# 📇 Retrieval Catalog: Mini Search Engine Lab
 
 A mini search engine for a sample book catalog, built on **Information Retrieval** principles
 and written in Python with Streamlit. Type a query and the matching books appear as library
