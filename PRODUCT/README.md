@@ -11,7 +11,7 @@ This project was built for the **Information Retrieval Systems** course
 🔗 **Live demo:**
 
 
-![Bookshelf view](docs/bookshelf.png)
+
 
 ---
 
