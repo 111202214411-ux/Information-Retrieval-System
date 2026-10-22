@@ -8,10 +8,17 @@ ordered by relevance. Click a book to see its cover and details.
 This project was built for the **Information Retrieval Systems** course
 (*Sistem Temu Kembali Informasi*, STKI).
 
-🔗 **Live demo:** [REPLACE_WITH_STREAMLIT_LINK](https://REPLACE_WITH_STREAMLIT_LINK.streamlit.app)
+🔗 **Live demo:** https://information-retrieval-system-kzqtwhfxy6mnmgcp8ns7el.streamlit.app/
 
 
 ![Bookshelf view](docs/bookshelf.png)
+
+
+<img width="1366" height="768" alt="bookshelf1" src="https://github.com/user-attachments/assets/cc68a4f5-a91b-45e6-bcc9-956e75858f8a" />
+
+<img width="1366" height="768" alt="bookshelf2" src="https://github.com/user-attachments/assets/4c887380-8a8c-486a-9a63-b559e7d89960" />
+
+<img width="1366" height="768" alt="bookshelf3" src="https://github.com/user-attachments/assets/6d8a0fb4-7cf6-47c1-b7d0-06c5638d65c5" />
 
 
 
@@ -55,7 +62,9 @@ This project was built for the **Information Retrieval Systems** course
 
 | Search results | Book details |
 |---|---|
-| ![Search results](docs/search-results.png) | ![Book details](docs/book-details.png) |
+| <img width="1366" height="768" alt="search-results" src="https://github.com/user-attachments/assets/4aabd3bc-57a8-4fd6-8682-2c8cd59fbb6f" />
+ | <img width="1366" height="768" alt="book-details" src="https://github.com/user-attachments/assets/ad91ddee-6a61-46f9-9955-9e15b1811d70" />
+ |
 
 <details>
 <summary><b>Retrieval steps shown in the app</b></summary>
