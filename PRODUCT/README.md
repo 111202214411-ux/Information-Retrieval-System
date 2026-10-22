@@ -67,7 +67,10 @@ This project was built for the **Information Retrieval Systems** course
 <details>
 <summary><b>Retrieval steps shown in the app</b></summary>
 
-<img width="940" height="1397" alt="retrieval-steps" src="https://github.com/user-attachments/assets/ad5a3ba9-ca9e-43b0-95a8-0a7b8748e488" />
+<img width="555" height="580" alt="retrieval-steps1" src="https://github.com/user-attachments/assets/aa73c027-84b4-421a-b680-18bd06f1ceca" />
+
+<img width="922" height="580" alt="retrieval-steps2" src="https://github.com/user-attachments/assets/db51a5b6-bc50-45e1-a001-8ce83a182b86" />
+
 
 </details>
 
