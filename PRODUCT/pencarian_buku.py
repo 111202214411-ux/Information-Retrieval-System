@@ -1,19 +1,3 @@
-"""
-Bookshelf — Book Title Search Engine (Streamlit)
-================================================
-Information Retrieval Systems course project.
-
-- The retrieval engine (preprocessing, inverted index, TF-IDF, cosine similarity)
-  lives in ir.py; this file only handles the user interface.
-- The document collection is in books.json (the indexed field is the book title).
-- Cover images go in the covers/ folder, named after each book's "cover" field.
-  If an image is missing, a simple cover is generated automatically.
-
-Run locally:
-    pip install -r requirements.txt
-    streamlit run pencarian_buku.py
-"""
-
 from __future__ import annotations
 
 import html
@@ -35,7 +19,7 @@ except ImportError:  # fallback: results update after pressing Enter
 BASE_DIR = Path(__file__).parent
 COVER_DIR = BASE_DIR / "covers"
 
-st.set_page_config(page_title="Bookshelf — Book Title Search", page_icon="📚", layout="wide")
+st.set_page_config(page_title="Bookshelf: Book Title Search", page_icon="📚", layout="wide")
 
 # Cloth colors for book spines and generated covers: (background, text)
 BINDINGS = [
