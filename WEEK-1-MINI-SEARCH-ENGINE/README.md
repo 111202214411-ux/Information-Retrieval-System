@@ -11,8 +11,17 @@ This project was built for **Session 1: Introduction to Information Retrieval** 
 
 🔗 **Live demo:** https://information-retrieval-system-9mzr4yjzaakfymgiet859u.streamlit.app
 
+## View
+
+The full interface: model settings and the *Add a book* form in the sidebar; the query box,
+example queries, active formula, and collection statistics at the top; and the ranked
+catalog cards below.
+
+![Retrieval Catalog view](docs/app-view.png)
+
 ## Table of contents
 
+- [View](#view)
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Data](#data)
@@ -52,14 +61,12 @@ This project was built for **Session 1: Introduction to Information Retrieval** 
 
 | Search results | Inverted index |
 |---|---|
-| <img width="2160" height="1500" alt="search-results" src="https://github.com/user-attachments/assets/e0c98db7-6ee3-43ca-a0c5-115bf428ae91" /> | <img width="1542" height="611" alt="inverted-index" src="https://github.com/user-attachments/assets/33cc20b4-739a-486e-a975-8340aa16eb8a" />
-
+| <img width="2160" height="1500" alt="search-results" src="https://github.com/user-attachments/assets/e0c98db7-6ee3-43ca-a0c5-115bf428ae91" /> | <img width="1542" height="611" alt="inverted-index" src="https://github.com/user-attachments/assets/33cc20b4-739a-486e-a975-8340aa16eb8a" /> |
 
 <details>
 <summary><b>Model comparison shown in the app</b></summary>
 
 <img width="1542" height="705" alt="model-comparison" src="https://github.com/user-attachments/assets/c6280f4a-07b4-4ff0-ab4d-803c8593e279" />
-
 
 </details>
 
