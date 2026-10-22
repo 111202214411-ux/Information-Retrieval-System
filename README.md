@@ -1,4 +1,4 @@
-# 📚 Rak Buku — Book Title Search Engine
+# 📚 Rak Buku: Book Title Search Engine
 
 A book title search engine built on **Information Retrieval** principles, using the
 **Vector Space Model (TF-IDF + Cosine Similarity)**, written in Python with Streamlit.
