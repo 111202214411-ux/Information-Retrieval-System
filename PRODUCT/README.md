@@ -22,7 +22,6 @@ Bookshelf view
 
 
 
-
 ## Table of contents
 
 - [Features](#features)
@@ -64,12 +63,15 @@ Bookshelf view
 |---|---|
 | <img width="1366" height="768" alt="search-results" src="https://github.com/user-attachments/assets/4aabd3bc-57a8-4fd6-8682-2c8cd59fbb6f" /> | <img width="1366" height="768" alt="book-details" src="https://github.com/user-attachments/assets/ad91ddee-6a61-46f9-9955-9e15b1811d70" />
 
+<details>
+
 <summary><b>Retrieval steps shown in the app</b></summary>
 
 <img width="555" height="580" alt="retrieval-steps1" src="https://github.com/user-attachments/assets/aa73c027-84b4-421a-b680-18bd06f1ceca" />
 
 <img width="922" height="580" alt="retrieval-steps2" src="https://github.com/user-attachments/assets/db51a5b6-bc50-45e1-a001-8ce83a182b86" />
 
+</details>
 ## Data
 
 The corpus contains **82 books**, stored in [`books.json`](books.json). Most titles are in
