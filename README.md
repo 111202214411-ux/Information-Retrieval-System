@@ -14,7 +14,11 @@ This project was built for the **Information Retrieval Systems** course
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.66-FF4B4B?logo=streamlit&logoColor=white)
 ![Method](https://img.shields.io/badge/Method-TF--IDF%20%2B%20Cosine%20Similarity-2F5D50)
 
-![Bookshelf view](docs/rak-buku.png)
+![Bookshelf view]
+
+<img width="1366" height="768" alt="bookshelf1" src="https://github.com/user-attachments/assets/3026424a-7a5c-4933-abbd-6719fc72bd52" />
+
+<img width="1366" height="768" alt="bookshelf2" src="https://github.com/user-attachments/assets/2574c77f-f035-427c-93fa-9ccc7141aa83" />
 
 > The app interface is in Indonesian (*Rak Buku* means "Bookshelf"). The search engine
 > handles both Indonesian and English titles.
