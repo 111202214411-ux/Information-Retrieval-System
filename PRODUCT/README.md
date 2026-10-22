@@ -11,7 +11,7 @@ This project was built for the **Information Retrieval Systems** course
 🔗 **Live demo:** https://information-retrieval-system-kzqtwhfxy6mnmgcp8ns7el.streamlit.app/
 
 
-![Bookshelf view](docs/bookshelf.png)
+![Bookshelf view]
 
 
 <img width="1366" height="768" alt="bookshelf1" src="https://github.com/user-attachments/assets/cc68a4f5-a91b-45e6-bcc9-956e75858f8a" />
@@ -63,7 +63,6 @@ This project was built for the **Information Retrieval Systems** course
 | Search results | Book details |
 |---|---|
 | <img width="1366" height="768" alt="search-results" src="https://github.com/user-attachments/assets/4aabd3bc-57a8-4fd6-8682-2c8cd59fbb6f" /> | <img width="1366" height="768" alt="book-details" src="https://github.com/user-attachments/assets/ad91ddee-6a61-46f9-9955-9e15b1811d70" />
- |
 
 <details>
 <summary><b>Retrieval steps shown in the app</b></summary>
