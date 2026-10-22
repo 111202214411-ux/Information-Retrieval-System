@@ -17,7 +17,8 @@ The full interface: model settings and the *Add a book* form in the sidebar; the
 example queries, active formula, and collection statistics at the top; and the ranked
 catalog cards below.
 
-![Retrieval Catalog view](docs/app-view.png)
+<img width="1800" height="2300" alt="app-view" src="https://github.com/user-attachments/assets/035e5008-21ad-4c41-939f-916d56e71994" />
+
 
 ## Table of contents
 
