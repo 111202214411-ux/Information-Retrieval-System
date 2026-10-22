@@ -1,10 +1,3 @@
-"""
-app.py: Streamlit interface for Retrieval Catalog.
-
-Run locally:
-    streamlit run app.py
-"""
-
 from __future__ import annotations
 
 import html
