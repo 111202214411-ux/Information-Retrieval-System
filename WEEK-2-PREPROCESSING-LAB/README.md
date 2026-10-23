@@ -38,8 +38,6 @@ each step.
 - [Limitations](#limitations)
 - [References](#references)
 
----
-
 ## Features
 
 - **Step-by-step pipeline.** Each of the six steps shows its own output, so you can see exactly
