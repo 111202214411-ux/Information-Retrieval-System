@@ -1,0 +1,91 @@
+{
+  "Rice plant symptoms (lecture worked example)": {
+    "note": "The worked example from the lecture: three symptoms G1–G3 and the query Q. The query is counted as a document when computing N and df, exactly as in the slides (N = 4).",
+    "lang": "id",
+    "documents": {
+      "G1": "Daun berwarna kuning",
+      "G2": "Daun berwarna putih",
+      "G3": "Batang berwarna kuning"
+    },
+    "query": "Daun kuning",
+    "settings": {"tf": "raw", "idf_base": "10", "query_as_document": true, "stopwords": true, "stemming": true}
+  },
+  "Leaf colors (lecture quiz)": {
+    "note": "The quiz at the end of the old VSM slides. The spelling 'bewarna' is kept as written on the slide.",
+    "lang": "id",
+    "documents": {
+      "Dokumen 1": "Daun bewarna coklat",
+      "Dokumen 2": "Bunga bewarna hijau",
+      "Dokumen 3": "Rumput bewarna hijau"
+    },
+    "query": "Daun hijau",
+    "settings": {"tf": "raw", "idf_base": "10", "query_as_document": true, "stopwords": true, "stemming": true}
+  },
+  "Spreadsheet example A (love and races)": {
+    "note": "Example A from SimilarityTest.xlsx: binary TF, IDF = log2(N/df) with N = 3, and Euclidean distance between documents.",
+    "lang": "id",
+    "documents": {
+      "D1": "cinta romantis mas kawin",
+      "D2": "kawin lari kawula muda",
+      "D3": "lomba lari hadiah cincin emas"
+    },
+    "query": "kawin lari",
+    "settings": {"tf": "binary", "idf_base": "2", "query_as_document": false, "stopwords": true, "stemming": true},
+    "clustering": {"k": 2, "init": ["D1", "D3"]}
+  },
+  "Spreadsheet example B (money and illness)": {
+    "note": "Example B from SimilarityTest.xlsx: preprocessing, binary TF, IDF = log10(N/df) with N = 4, then clustering with D1 and D4 as the starting centroids.",
+    "lang": "id",
+    "documents": {
+      "D1": "Mata uang rupiah",
+      "D2": "penyakit mata",
+      "D3": "pencurian uang adalah penyakit masyarakat",
+      "D4": "penyakit kekurangan uang"
+    },
+    "query": "penyakit mata",
+    "settings": {"tf": "binary", "idf_base": "10", "query_as_document": false, "stopwords": true, "stemming": true},
+    "clustering": {"k": 2, "init": ["D1", "D4"]}
+  },
+  "Cats and dogs (TF-IDF vs dense)": {
+    "note": "The lecture's TF-IDF vs dense example: TF-IDF cannot tell that 'feline' is related to 'cat'.",
+    "lang": "en",
+    "documents": {
+      "D1": "The cat sat on the mat",
+      "D2": "Dogs are loyal pets",
+      "D3": "Feline animals are independent",
+      "D4": "Canine companions"
+    },
+    "query": "cat behavior",
+    "settings": {"tf": "log", "idf_base": "10", "query_as_document": false, "stopwords": true, "stemming": false}
+  },
+  "University FAQ (sparse vs dense vs hybrid)": {
+    "note": "Twelve FAQ answers with eight labelled queries, a small version of the lecture's 100-document FAQ case study.",
+    "lang": "en",
+    "documents": {
+      "F01": "Course registration (KRS) opens two weeks before the semester. Log in to the student portal, choose your classes, and ask your academic advisor to approve them.",
+      "F02": "Tuition fees must be paid before the registration deadline through the bank virtual account shown in the student portal.",
+      "F03": "Students with a GPA above 3.5 can apply for the merit scholarship. Applications open every August.",
+      "F04": "The central library is open from 8 am to 9 pm on weekdays and from 9 am to 3 pm on Saturdays.",
+      "F05": "Students may borrow up to five books for two weeks. Late returns are charged a small fine per day.",
+      "F06": "To graduate you must complete 144 credits, pass the thesis defense, and submit a TOEIC certificate.",
+      "F07": "Submit your thesis proposal to the department. A supervisor is assigned within two weeks.",
+      "F08": "Connect to the campus wireless network with your student ID and portal password.",
+      "F09": "Report a lost student ID card at the administration office and pay a replacement fee.",
+      "F10": "Students can take a leave of absence for up to two semesters by submitting a form to the faculty.",
+      "F11": "On-campus housing is available for first-year students. Apply through the housing office before July.",
+      "F12": "Midterm and final exam timetables are published in the student portal one month in advance."
+    },
+    "query": "money for students with good grades",
+    "settings": {"tf": "log", "idf_base": "10", "query_as_document": false, "stopwords": true, "stemming": false},
+    "labelled_queries": {
+      "KRS registration": ["F01"],
+      "how can I pay my tuition fees": ["F02"],
+      "money for students with good grades": ["F03"],
+      "when is the library open": ["F04"],
+      "where can I live on campus": ["F11"],
+      "TOEIC certificate": ["F06"],
+      "internet connection on campus": ["F08"],
+      "I lost my ID card": ["F09"]
+    }
+  }
+}
