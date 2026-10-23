@@ -10,7 +10,7 @@ Boolean, TF-IDF, and embedding search on the same query.
 This project was built for **Session 3: Boolean Retrieval & Word Embeddings** of the
 **Information Retrieval Systems** course (*Sistem Temu Kembali Informasi*, STKI).
 
-🔗 **Live demo:** *add the Streamlit link here after deploying*
+🔗 **Live demo:** https://information-retrieval-system-sde6wfb5iwdjyagex9edry.streamlit.app/
 
 ## View
 
