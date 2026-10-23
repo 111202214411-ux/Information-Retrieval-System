@@ -1,0 +1,85 @@
+{
+  "Shakespeare plays (incidence matrix example)": {
+    "note": "The lecture's incidence matrix. Each play lists only the terms that appear in the matrix, so the index matches the slide exactly.",
+    "lang": "en",
+    "documents": {
+      "Antony & Cleopatra": "Antony Brutus Caesar Cleopatra Mercy Worser",
+      "Julius Caesar": "Antony Brutus Caesar Calpurnia",
+      "The Tempest": "Mercy Worser",
+      "Hamlet": "Brutus Caesar Mercy Worser",
+      "Othello": "Caesar Mercy Worser",
+      "Macbeth": "Antony Caesar Mercy"
+    },
+    "queries": [
+      "Brutus AND Caesar AND NOT Calpurnia",
+      "(Brutus OR Caesar) AND NOT (Antony OR Cleopatra)",
+      "Mercy AND Worser OR Calpurnia",
+      "NOT Caesar"
+    ]
+  },
+  "Genetic algorithms (inverted index example, Indonesian)": {
+    "note": "The lecture's Case Study B. Positions start at 1, as on the slide.",
+    "lang": "id",
+    "documents": {
+      "Id1": "Algoritma Genetik dapat digunakan untuk Optimasi fuzzy",
+      "Id2": "Optimasi fungsi keanggotaan pada fuzzy",
+      "Id3": "Algoritma genetik merupakan algoritma Learning"
+    },
+    "queries": [
+      "Fuzzy OR NOT (Genetik AND Learning)",
+      "algoritma AND genetik",
+      "optimasi AND NOT fuzzy",
+      "learning OR fungsi"
+    ]
+  },
+  "Home sales (lecture quiz)": {
+    "note": "The quiz at the end of the lecture: build the incidence matrix and answer the two queries.",
+    "lang": "en",
+    "documents": {
+      "Doc 1": "New home sales top forecasts",
+      "Doc 2": "Home sales rise in july",
+      "Doc 3": "Increase in home sales in july",
+      "Doc 4": "July new home sales rise"
+    },
+    "queries": [
+      "Home AND Sales AND NOT July",
+      "Home AND July AND NOT Sales",
+      "new AND (rise OR forecasts)",
+      "july AND NOT new"
+    ]
+  },
+  "Machine learning abstracts (Boolean vs embeddings)": {
+    "note": "Five short abstracts for the lecture's case study query: neural network text processing.",
+    "lang": "en",
+    "documents": {
+      "Doc 1": "Machine learning algorithms for classification of tabular data",
+      "Doc 2": "Neural models for text processing and translation",
+      "Doc 3": "Image recognition with convolutional filters and pixel features",
+      "Doc 4": "Training a neural network on satellite images",
+      "Doc 5": "Natural language understanding of written documents and speech"
+    },
+    "queries": [
+      "neural AND network",
+      "neural AND network AND text AND processing",
+      "neural OR text OR processing",
+      "(neural OR language) AND NOT images"
+    ]
+  },
+  "Car repair (synonyms, general domain)": {
+    "note": "A general-domain collection where the relevant documents use synonyms (automobile, vehicle, mechanics) instead of the query words.",
+    "lang": "en",
+    "documents": {
+      "Doc 1": "Automobile maintenance and engine service at a local garage",
+      "Doc 2": "Car insurance prices rise again this year",
+      "Doc 3": "Fixing a broken bicycle chain at home",
+      "Doc 4": "Vehicle mechanics replace brakes and tires",
+      "Doc 5": "Recipes for a quick vegetable soup"
+    },
+    "queries": [
+      "car AND repair",
+      "car OR repair",
+      "(car OR automobile OR vehicle) AND NOT insurance",
+      "engine OR brakes"
+    ]
+  }
+}
