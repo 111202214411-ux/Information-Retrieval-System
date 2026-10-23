@@ -11,7 +11,7 @@ Retrieval Systems** course (*Sistem Temu Kembali Informasi*, STKI). It follows
 *Retrieval Catalog* from Session 1, which uses the output of this step to build an
 inverted index.
 
-🔗 **Live demo:** https://information-retrieval-system-lyjyd26zsei3epu5xzreuw.streamlit.app/
+🔗 **Live demo:** 
 
 ## View
 
@@ -306,7 +306,7 @@ The app opens in your browser at `http://localhost:8501`.
 2. Go to [share.streamlit.io](https://share.streamlit.io), choose **Create app**, and select
    this repository.
 3. Set **Main file path** to `app.py` (or `preprocessing-lab/app.py` if the app is in a subfolder).
-4. Under **Advanced settings**, choose Python 3.12, then click **Deploy**.
+4. Click **Deploy**. Any Python version from 3.10 up works, including 3.14.
 
 The app updates automatically whenever changes are pushed to GitHub.
 
