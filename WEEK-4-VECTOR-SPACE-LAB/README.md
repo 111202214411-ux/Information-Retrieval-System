@@ -9,7 +9,7 @@ with Euclidean distance, group documents with k-means, then search the same docu
 This project was built for **Session 4: Vector Space Model & Dense Retrieval** of the
 **Information Retrieval Systems** course (*Sistem Temu Kembali Informasi*, STKI).
 
-🔗 **Live demo:** *add the Streamlit link here after deploying*
+🔗 **Live demo:** https://information-retrieval-system-qqvduqhixqpvypcnejfxwd.streamlit.app/
 
 ## View
 
