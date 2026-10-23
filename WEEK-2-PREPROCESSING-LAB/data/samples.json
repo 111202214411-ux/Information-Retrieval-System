@@ -1,0 +1,72 @@
+{
+  "documents": [
+    {
+      "name": "Tokens, types, and terms",
+      "lang": "id",
+      "text": "apakah culo dan boyo bermain bola di depan rumah boyo?",
+      "note": "The lecture example for the difference between tokens, types, and terms."
+    },
+    {
+      "name": "Santiago (Indonesian)",
+      "lang": "id",
+      "text": "Namanya adalah Santiago. Santiago sudah memutuskan untuk mencari sang alkemis.",
+      "note": "The lecture's Indonesian tokenization, filtering, and stemming example."
+    },
+    {
+      "name": "Sastrawi code example",
+      "lang": "id",
+      "text": "Pembelajaran mesin digunakan untuk klasifikasi dokumen",
+      "note": "The input used in the lecture's NLTK + Sastrawi code example."
+    },
+    {
+      "name": "Noisy web text",
+      "lang": "id",
+      "text": "<p>Pendaftaran <b>WISUDA</b> dibuka 1-15 Desember 2026! Info lengkap: https://example.ac.id/wisuda &amp; cek email ke admin@example.ac.id</p>",
+      "note": "HTML tags, an entity, a URL, an email address, numbers, and mixed case: everything the cleaning step removes."
+    },
+    {
+      "name": "They are applied (English)",
+      "lang": "en",
+      "text": "They are applied to the words in the texts.",
+      "note": "The lecture's English tokenization, filtering, and stemming example."
+    },
+    {
+      "name": "Phrase detection (English)",
+      "lang": "en",
+      "text": "Search engines are the most visible information retrieval applications.",
+      "note": "The lecture's phrase detection example: it contains two phrases, \"search engines\" and \"information retrieval\"."
+    },
+    {
+      "name": "Irregular forms (English)",
+      "lang": "en",
+      "text": "She saw that the mice had seen better days, and the studies were running late.",
+      "note": "Irregular forms (saw, seen, mice, better) separate stemming from lemmatization."
+    }
+  ],
+  "case_study": [
+    {
+      "id": "D1",
+      "text": "pembukaan daftar wisuda dan pelaksanaan nya lebih baik d umumkan di web tidak hanya di fakultas. sehingga memudahkan mahasiswa yang ada di luar kota. pelaksanaan wisuda sebaiknya terjadwal tidak tergantung pada kuota. sehingga lebih cepat mendapat ijazah."
+    },
+    {
+      "id": "D2",
+      "text": "dalam setahun belakangan ini, pengaksesan KRS diganti ke SIAM (sebelumnya menggunakan SINERGI). saat menggunakan sinergi, fitur serta kecepatan akses sangat handal dan nyaman. tapi setelah diganti menggunakan SIAM, keadaan berbalik menjadi buruk (lambat loading dan bahkan sampai logout dengan sendirinya). *KRS tidak hanya berpengaruh bagi mahasiswa semester muda tapi juga keseluruhan mahasiswa"
+    },
+    {
+      "id": "D3",
+      "text": "Assalamualaikum Wr. Wb. yang menjadi salah satu syarat untuk bisa ujian kompre ada sertifikat TOEIC, sehingga jika belum lulus toeic maka tidak bisa melakukan ujian kompre. saya rasa ini sangat menghambat teman-teman yang memang lemah dibidang bahasa inggris (atau yang kurang beruntung dalam ujian toeic-nya). sehingga mereka tidak bisa fokus untuk ujian kompre-nya. terima kasih.."
+    },
+    {
+      "id": "D4",
+      "text": "pak/bu dosen saya mau minta keringanan biaya proposional dan spp ,soalnya ibu saya keberatan dengan biaya itu? terima kasih atas perhatiannya."
+    }
+  ],
+  "phrases": {
+    "id": ["terima kasih", "bahasa inggris", "ujian kompre", "temu kembali", "sistem informasi", "luar kota"],
+    "en": ["search engine", "search engines", "information retrieval", "machine learning", "new york"]
+  },
+  "wordlists": {
+    "id": ["namanya", "santiago", "memutuskan", "mencari", "alkemis"],
+    "en": ["applied", "words", "texts"]
+  }
+}
