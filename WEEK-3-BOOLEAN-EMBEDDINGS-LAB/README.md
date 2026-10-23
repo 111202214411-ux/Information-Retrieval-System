@@ -35,8 +35,6 @@ the bit-vector evaluation, and the matching documents in the main area.
 - [Limitations](#limitations)
 - [References](#references)
 
----
-
 ## Features
 
 **Boolean retrieval**
