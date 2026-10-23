@@ -11,7 +11,7 @@ Retrieval Systems** course (*Sistem Temu Kembali Informasi*, STKI). It follows
 *Retrieval Catalog* from Session 1, which uses the output of this step to build an
 inverted index.
 
-🔗 **Live demo:** *add the Streamlit link here after deploying*
+🔗 **Live demo:** https://information-retrieval-system-lyjyd26zsei3epu5xzreuw.streamlit.app/
 
 ## View
 
