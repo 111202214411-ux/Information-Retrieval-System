@@ -311,7 +311,7 @@ included in `data/`.
 2. Go to [share.streamlit.io](https://share.streamlit.io), choose **Create app**, and select this
    repository.
 3. Set **Main file path** to `app.py` (or `boolean-embeddings-lab/app.py` if the app is in a subfolder).
-4. Under **Advanced settings**, choose Python 3.12, then click **Deploy**.
+4. Click **Deploy**. Any Python version from 3.10 up works, including 3.14.
 
 The app updates automatically whenever changes are pushed to GitHub.
 
