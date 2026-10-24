@@ -1,0 +1,53 @@
+{
+  "BM25 by hand (4 short documents)": {
+    "note": "A tiny collection for computing TF-IDF and BM25 by hand (Tugas-5). D2 repeats 'cat' three times; D3 mentions it once in a long text.",
+    "documents": {
+      "D1": "The cat sat on the mat.",
+      "D2": "The cat chased the cat next door, and the cat won.",
+      "D3": "A long afternoon in the park: children played, dogs ran, birds sang, and one cat slept under a tree while the families had a picnic.",
+      "D4": "Dogs are loyal and friendly pets."
+    },
+    "query": "cat",
+    "labelled_queries": {}
+  },
+  "Everyday articles (24 documents, 8 labelled queries)": {
+    "note": "Twenty-four short articles on four topics (vehicles, cooking, search engines, health) with eight labelled queries, for evaluating with Precision@5 and Precision@10.",
+    "documents": {
+      "V1": "How to change the oil in your car and check the engine every few months.",
+      "V2": "Automobile maintenance checklist: tires, brakes, battery, and coolant.",
+      "V3": "Electric vehicles need less servicing because they have fewer moving parts.",
+      "V4": "A mechanic explains the most common causes of engine trouble in older cars.",
+      "V5": "Car insurance prices are rising for young drivers this year.",
+      "V6": "Bicycle repair basics: fixing a flat tire and adjusting the brakes.",
+      "C1": "A quick recipe for vegetable soup with carrots, celery, and onions.",
+      "C2": "How to bake soft bread at home with flour, yeast, and water.",
+      "C3": "Healthy breakfast ideas: oatmeal, fruit, yogurt, and eggs.",
+      "C4": "Cooking rice perfectly: rinse the grains and use the right amount of water.",
+      "C5": "Spicy fried noodles with chicken, a popular street food dish.",
+      "C6": "Meal preparation tips to save time cooking during a busy week.",
+      "S1": "Search engines rank web pages by their relevance to the user's query.",
+      "S2": "BM25 is a ranking function used by Elasticsearch and Lucene.",
+      "S3": "An inverted index maps every term to the documents that contain it.",
+      "S4": "Dense retrieval encodes queries and documents as vectors with a neural network.",
+      "S5": "SPLADE learns sparse term weights and expands documents with related terms.",
+      "S6": "TF-IDF gives a high weight to words that are frequent in a document but rare in the collection.",
+      "H1": "Regular exercise lowers blood pressure and improves heart health.",
+      "H2": "Doctors recommend seven to nine hours of sleep for adults.",
+      "H3": "Drinking enough water helps the body regulate its temperature.",
+      "H4": "A balanced diet with vegetables and fruit reduces the risk of disease.",
+      "H5": "Walking thirty minutes a day is a simple way to stay fit.",
+      "H6": "Stress can cause headaches, poor sleep, and high blood pressure."
+    },
+    "query": "vehicle servicing",
+    "labelled_queries": {
+      "car engine maintenance": ["V1", "V2", "V3", "V4"],
+      "vehicle servicing": ["V1", "V2", "V3", "V4"],
+      "how to cook food at home": ["C1", "C2", "C3", "C4", "C5", "C6"],
+      "BM25 ranking": ["S1", "S2", "S6"],
+      "how search engines find documents": ["S1", "S2", "S3", "S4", "S5", "S6"],
+      "staying healthy": ["H1", "H2", "H3", "H4", "H5"],
+      "blood pressure": ["H1", "H6"],
+      "trouble sleeping": ["H2", "H6"]
+    }
+  }
+}
