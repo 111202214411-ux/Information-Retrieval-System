@@ -9,7 +9,7 @@ and Precision@10.
 This project was built for **Session 5: Term Weighting & Learned Sparse Retrieval** of the
 **Information Retrieval Systems** course (*Sistem Temu Kembali Informasi*, STKI).
 
-🔗 **Live demo:** *add the Streamlit link here after deploying*
+🔗 **Live demo:** https://information-retrieval-system-5mgtaeghbvah8u4n84vncb.streamlit.app/
 
 ## View
 
