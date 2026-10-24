@@ -11,7 +11,7 @@ This project was built for **Session 6: Search Engine Architecture & Hybrid Sear
 **Information Retrieval Systems** course (*Sistem Temu Kembali Informasi*, STKI), together with the
 *Search Engine Concept* material (crawling, indexing, searching, and search operators).
 
-🔗 **Live demo:** *add the Streamlit link here after deploying*
+🔗 **Live demo:** https://information-retrieval-system-kthsppovkbbjgn2cbebfjc.streamlit.app/
 
 ## View
 
