@@ -101,13 +101,13 @@ The documents were written for this lab.
 ```mermaid
 flowchart LR
     Q[Query] --> T[Tokenize]
-    T --> TF[TF-IDF<br/>6 TF variants]
-    T --> BM[BM25<br/>k1, b]
-    Q --> SP[SPLADE<br/>BERT MLM → ReLU + log1p → max pool]
-    Q --> DE[Dense<br/>all-MiniLM-L6-v2]
-    BM --> H[Hybrid<br/>α · BM25/max + 1−α · dense]
+    T --> TF["TF-IDF<br/>6 TF variants"]
+    T --> BM["BM25<br/>k1, b"]
+    Q --> SP["SPLADE<br/>BERT MLM, ReLU + log1p, max pooling"]
+    Q --> DE["Dense<br/>all-MiniLM-L6-v2"]
+    BM --> H["Hybrid<br/>α · BM25/max + (1 − α) · dense"]
     DE --> H
-    TF --> E[Evaluation<br/>P@5, P@10, MAP]
+    TF --> E["Evaluation<br/>P@5, P@10, MAP"]
     BM --> E
     SP --> E
     DE --> E
