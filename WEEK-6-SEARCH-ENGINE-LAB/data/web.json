@@ -1,0 +1,504 @@
+{
+ "seeds": [
+  "https://ir.unikampus.ac.id/index.html",
+  "https://news.techharian.id/"
+ ],
+ "pages": [
+  {
+   "url": "https://ir.unikampus.ac.id/index.html",
+   "type": "html",
+   "title": "Sistem Temu Kembali Informasi — Beranda Mata Kuliah",
+   "body": "Selamat datang di halaman mata kuliah Sistem Temu Kembali Informasi. Materi minggu ini membahas arsitektur mesin pencari modern dan pencarian hibrida. Unduh slide dan catatan kuliah pada bagian berkas di bawah ini.",
+   "links": [
+    "https://ir.unikampus.ac.id/materi/mesin-pencari.html",
+    "https://ir.unikampus.ac.id/materi/operator-pencarian.html",
+    "https://ir.unikampus.ac.id/materi/pencarian-hibrida.html",
+    "https://ir.unikampus.ac.id/files/session-06-hybrid-search.ppt",
+    "https://ir.unikampus.ac.id/files/bm25-lecture-notes.pdf",
+    "https://ir.unikampus.ac.id/files/old-syllabus.pdf",
+    "https://wiki.searchpedia.org/"
+   ]
+  },
+  {
+   "url": "https://ir.unikampus.ac.id/materi/mesin-pencari.html",
+   "type": "html",
+   "title": "Cara Kerja Mesin Pencari: Crawling, Indexing, Searching",
+   "body": "Mesin pencari bekerja dalam tiga tahap. Crawling: perayap menjelajah web dengan mengikuti tautan untuk mengumpulkan halaman. Indexing: informasi yang ditemukan disusun ke dalam basis data agar dapat dipakai kembali ketika pengguna mencari. Searching: kata kunci pengguna dicocokkan dengan basis data, lalu halaman yang sesuai disajikan pada halaman hasil pencarian.",
+   "links": [
+    "https://ir.unikampus.ac.id/index.html",
+    "https://wiki.searchpedia.org/wiki/Web_crawler",
+    "https://wiki.searchpedia.org/wiki/Inverted_index"
+   ]
+  },
+  {
+   "url": "https://ir.unikampus.ac.id/materi/operator-pencarian.html",
+   "type": "html",
+   "title": "Operator Pencarian: intitle, allintitle, inurl, allinurl, site, filetype",
+   "body": "Operator khusus membantu membatasi hasil pencarian. Operator intitle membatasi hasil pada halaman yang judulnya memuat kata tertentu, inurl membatasi pada alamat URL, site membatasi pada domain seperti ac.id, dan filetype menampilkan berkas tertentu seperti pdf atau ppt. Ketepatan pemilihan kata kunci memengaruhi keakuratan hasil pencarian.",
+   "links": [
+    "https://ir.unikampus.ac.id/index.html",
+    "https://ir.unikampus.ac.id/materi/mesin-pencari.html"
+   ]
+  },
+  {
+   "url": "https://ir.unikampus.ac.id/materi/pencarian-hibrida.html",
+   "type": "html",
+   "title": "Pencarian Hibrida: Menggabungkan BM25 dan Dense Retrieval",
+   "body": "Pencarian hibrida menggabungkan skor BM25 yang menangkap kecocokan kata secara tepat dengan skor dense retrieval yang menangkap kemiripan makna. Skor BM25 dinormalisasi min-max lalu dijumlahkan dengan bobot alfa. Alternatifnya, reciprocal rank fusion menggabungkan peringkat tanpa perlu menormalkan skor.",
+   "links": [
+    "https://ir.unikampus.ac.id/index.html",
+    "https://wiki.searchpedia.org/wiki/Reciprocal_rank_fusion",
+    "https://wiki.searchpedia.org/wiki/Dense_retrieval",
+    "https://wiki.searchpedia.org/wiki/Okapi_BM25"
+   ]
+  },
+  {
+   "url": "https://ir.unikampus.ac.id/files/session-06-hybrid-search.ppt",
+   "type": "ppt",
+   "title": "Session 6 Slides: Search Engine Architecture and Hybrid Search",
+   "body": "Slides for session six. A modern search engine has a crawler and document processor, an offline indexer with inverted, dense and metadata indexes, an online query processor, and a multi-stage retrieval engine: BM25, dense retrieval, hybrid fusion and reranking. The slides also cover ColBERTv2 late interaction and vector databases such as ChromaDB, FAISS and Weaviate.",
+   "links": []
+  },
+  {
+   "url": "https://ir.unikampus.ac.id/files/bm25-lecture-notes.pdf",
+   "type": "pdf",
+   "title": "Lecture Notes: The BM25 Ranking Function",
+   "body": "BM25 scores a document by summing, over the query terms, the inverse document frequency times a saturating function of term frequency. The parameter k1 controls how quickly repeated occurrences stop adding score, and b controls length normalization against the average document length. Typical values are k1 = 1.2 and b = 0.75.",
+   "links": []
+  },
+  {
+   "url": "https://wiki.searchpedia.org/",
+   "type": "html",
+   "title": "Searchpedia — the free encyclopedia of search",
+   "body": "Searchpedia is a community encyclopedia about search technology. Browse articles on crawling, indexing, ranking, neural retrieval and vector search.",
+   "links": [
+    "https://wiki.searchpedia.org/wiki/Web_crawler",
+    "https://wiki.searchpedia.org/wiki/Inverted_index",
+    "https://wiki.searchpedia.org/wiki/Okapi_BM25",
+    "https://wiki.searchpedia.org/wiki/Dense_retrieval",
+    "https://wiki.searchpedia.org/wiki/Reciprocal_rank_fusion",
+    "https://wiki.searchpedia.org/wiki/ColBERT",
+    "https://wiki.searchpedia.org/wiki/Cross-encoder",
+    "https://wiki.searchpedia.org/wiki/HNSW",
+    "https://wiki.searchpedia.org/wiki/Product_quantization",
+    "https://wiki.searchpedia.org/wiki/Spelling_correction",
+    "https://wiki.searchpedia.org/wiki/Query_expansion",
+    "https://wiki.searchpedia.org/wiki/Near-duplicate_detection",
+    "https://wiki.searchpedia.org/wiki/PageRank",
+    "https://wiki.searchpedia.org/wiki/Language_identification"
+   ]
+  },
+  {
+   "url": "https://wiki.searchpedia.org/wiki/Web_crawler",
+   "type": "html",
+   "title": "Web crawler",
+   "body": "A web crawler, or spider, starts from a list of seed URLs and keeps a frontier of pages still to visit. It downloads each page, extracts its links and adds unseen ones to the frontier, usually in breadth-first order. Polite crawlers respect robots.txt and limit how often they request pages from the same host.",
+   "links": [
+    "https://wiki.searchpedia.org/",
+    "https://wiki.searchpedia.org/wiki/Inverted_index",
+    "https://wiki.searchpedia.org/wiki/Near-duplicate_detection",
+    "https://wiki.searchpedia.org/wiki/PageRank",
+    "https://wiki.searchpedia.org/wiki/Language_identification"
+   ]
+  },
+  {
+   "url": "https://wiki.searchpedia.org/wiki/Inverted_index",
+   "type": "html",
+   "title": "Inverted index",
+   "body": "An inverted index maps every term to a postings list: the documents that contain it, often with term frequencies and positions. It is built offline by the indexer and lets a search engine find candidate documents for a keyword query without scanning the whole collection.",
+   "links": [
+    "https://wiki.searchpedia.org/",
+    "https://wiki.searchpedia.org/wiki/Okapi_BM25",
+    "https://wiki.searchpedia.org/wiki/Web_crawler"
+   ]
+  },
+  {
+   "url": "https://wiki.searchpedia.org/wiki/Okapi_BM25",
+   "type": "html",
+   "title": "Okapi BM25",
+   "body": "Okapi BM25 is a bag-of-words ranking function. Each query term contributes its inverse document frequency multiplied by a term frequency component that saturates: the tenth occurrence of a word adds far less than the first. A length normalization factor penalizes long documents. BM25 remains a strong first-stage retriever.",
+   "links": [
+    "https://wiki.searchpedia.org/",
+    "https://wiki.searchpedia.org/wiki/Inverted_index",
+    "https://wiki.searchpedia.org/wiki/Dense_retrieval",
+    "https://wiki.searchpedia.org/wiki/Reciprocal_rank_fusion"
+   ]
+  },
+  {
+   "url": "https://wiki.searchpedia.org/wiki/Dense_retrieval",
+   "type": "html",
+   "title": "Dense retrieval",
+   "body": "Dense retrieval encodes the query and every document into a single embedding vector with a bi-encoder such as a sentence transformer, and ranks documents by cosine similarity. Because it compares meaning rather than exact words, it can match paraphrases and synonyms that share no vocabulary with the query. Document vectors are computed offline and stored in a vector index.",
+   "links": [
+    "https://wiki.searchpedia.org/",
+    "https://wiki.searchpedia.org/wiki/Okapi_BM25",
+    "https://wiki.searchpedia.org/wiki/ColBERT",
+    "https://wiki.searchpedia.org/wiki/Cross-encoder",
+    "https://wiki.searchpedia.org/wiki/HNSW",
+    "https://blog.vectorlab.dev/posts/chromadb-semantic-search-in-five-lines"
+   ]
+  },
+  {
+   "url": "https://wiki.searchpedia.org/wiki/Reciprocal_rank_fusion",
+   "type": "html",
+   "title": "Reciprocal rank fusion",
+   "body": "Reciprocal rank fusion (RRF) merges the result lists of several retrievers. Each document receives the sum of 1 / (k + rank) over the lists in which it appears, with k usually set to 60. Because only positions are used, scores on different scales never need to be normalized, which makes RRF a robust default for hybrid search.",
+   "links": [
+    "https://wiki.searchpedia.org/",
+    "https://wiki.searchpedia.org/wiki/Okapi_BM25",
+    "https://wiki.searchpedia.org/wiki/Dense_retrieval",
+    "https://docs.fusionsearch.io/guide/ranking-pipeline.html"
+   ]
+  },
+  {
+   "url": "https://wiki.searchpedia.org/wiki/ColBERT",
+   "type": "html",
+   "title": "ColBERT",
+   "body": "ColBERT is a late interaction retrieval model. Instead of one vector per text it keeps a contextual embedding for every token of the query and of the document. The relevance score sums, for each query token, its maximum similarity with any document token, an operation called MaxSim. ColBERTv2 compresses these token embeddings to reduce storage.",
+   "links": [
+    "https://wiki.searchpedia.org/",
+    "https://wiki.searchpedia.org/wiki/Dense_retrieval",
+    "https://wiki.searchpedia.org/wiki/Cross-encoder"
+   ]
+  },
+  {
+   "url": "https://wiki.searchpedia.org/wiki/Cross-encoder",
+   "type": "html",
+   "title": "Cross-encoder",
+   "body": "A cross-encoder feeds the query and a document together through a transformer and outputs a single relevance score. Joint encoding lets every word attend to every other word, so it is very accurate, but nothing can be precomputed, so it is used only to rerank a short list of candidates returned by a faster first stage.",
+   "links": [
+    "https://wiki.searchpedia.org/",
+    "https://wiki.searchpedia.org/wiki/ColBERT",
+    "https://docs.fusionsearch.io/guide/ranking-pipeline.html"
+   ]
+  },
+  {
+   "url": "https://wiki.searchpedia.org/wiki/HNSW",
+   "type": "html",
+   "title": "Hierarchical navigable small world (HNSW)",
+   "body": "HNSW is a graph-based index for approximate nearest neighbor search. Vectors are nodes linked to their close neighbors across several layers, and a query greedily walks the graph from the sparse top layer down to the dense bottom layer. It answers queries in milliseconds over millions of vectors with high recall, at the cost of extra memory for the links.",
+   "links": [
+    "https://wiki.searchpedia.org/",
+    "https://wiki.searchpedia.org/wiki/Product_quantization",
+    "https://blog.vectorlab.dev/posts/choosing-a-faiss-index"
+   ]
+  },
+  {
+   "url": "https://wiki.searchpedia.org/wiki/Product_quantization",
+   "type": "html",
+   "title": "Product quantization",
+   "body": "Product quantization compresses vectors by splitting each one into sub-vectors and replacing every sub-vector with the id of its nearest centroid from a small codebook. A vector of 50 floats, 200 bytes, can shrink to a handful of bytes, and similarities are estimated from lookup tables. It trades some accuracy for a large reduction in memory.",
+   "links": [
+    "https://wiki.searchpedia.org/",
+    "https://wiki.searchpedia.org/wiki/HNSW",
+    "https://blog.vectorlab.dev/posts/choosing-a-faiss-index"
+   ]
+  },
+  {
+   "url": "https://wiki.searchpedia.org/wiki/Spelling_correction",
+   "type": "html",
+   "title": "Spelling correction",
+   "body": "Query spelling correction suggests the intended word when a user mistypes, the familiar 'Did you mean' prompt. Candidates within a small edit distance, meaning insertions, deletions, substitutions or swapped letters, are taken from the index vocabulary and ranked by how common they are.",
+   "links": [
+    "https://wiki.searchpedia.org/",
+    "https://wiki.searchpedia.org/wiki/Query_expansion"
+   ]
+  },
+  {
+   "url": "https://wiki.searchpedia.org/wiki/Query_expansion",
+   "type": "html",
+   "title": "Query expansion",
+   "body": "Query expansion adds related terms to the user's query to improve recall, for example synonyms from a thesaurus, neighbors in a word embedding space, or frequent terms from the top-ranked documents (pseudo-relevance feedback). Expanded terms usually receive a lower weight than the original ones.",
+   "links": [
+    "https://wiki.searchpedia.org/",
+    "https://wiki.searchpedia.org/wiki/Spelling_correction",
+    "https://docs.fusionsearch.io/guide/query-understanding.html"
+   ]
+  },
+  {
+   "url": "https://wiki.searchpedia.org/wiki/Near-duplicate_detection",
+   "type": "html",
+   "title": "Near-duplicate detection",
+   "body": "Many pages on the web are copies or near copies of each other: mirrors, syndicated articles and scraped content. Document processors detect them by comparing sets of word shingles with Jaccard similarity, or with compact fingerprints such as SimHash and MinHash, and keep only one copy in the index.",
+   "links": [
+    "https://wiki.searchpedia.org/",
+    "https://wiki.searchpedia.org/wiki/Web_crawler"
+   ]
+  },
+  {
+   "url": "https://wiki.searchpedia.org/wiki/PageRank",
+   "type": "html",
+   "title": "PageRank",
+   "body": "PageRank estimates the importance of a page from the link graph: a page is important if important pages link to it. It models a random surfer who follows links and occasionally jumps to a random page. Link analysis signals like this are combined with text relevance when ranking web results.",
+   "links": [
+    "https://wiki.searchpedia.org/",
+    "https://wiki.searchpedia.org/wiki/Web_crawler"
+   ]
+  },
+  {
+   "url": "https://wiki.searchpedia.org/wiki/Language_identification",
+   "type": "html",
+   "title": "Language identification",
+   "body": "Language identification decides which language a document is written in, so that the right tokenizer, stemmer and stopword list can be applied. Simple detectors count characteristic words or character n-grams of each language, and the language with the most matches wins.",
+   "links": [
+    "https://wiki.searchpedia.org/",
+    "https://wiki.searchpedia.org/wiki/Web_crawler"
+   ]
+  },
+  {
+   "url": "https://wiki.searchpedia.org/wiki/Learning_to_rank",
+   "type": "html",
+   "title": "Learning to rank",
+   "body": "Learning to rank trains a machine learning model to order documents from many features, such as BM25 scores, PageRank and click data, using relevance judgments as training labels.",
+   "links": [
+    "https://wiki.searchpedia.org/wiki/Okapi_BM25",
+    "https://wiki.searchpedia.org/wiki/PageRank"
+   ]
+  },
+  {
+   "url": "https://mirror.searchpedia.net/wiki/Okapi_BM25",
+   "type": "html",
+   "title": "Okapi BM25",
+   "body": "Okapi BM25 is a bag-of-words ranking function. Each query term contributes its inverse document frequency multiplied by a term frequency component that saturates: the tenth occurrence of a word adds far less than the first. A length normalization factor penalizes long documents. BM25 remains a strong first-stage retriever.",
+   "links": [
+    "https://wiki.searchpedia.org/"
+   ]
+  },
+  {
+   "url": "https://blog.vectorlab.dev/posts/chromadb-semantic-search-in-five-lines",
+   "type": "html",
+   "title": "Semantic search with ChromaDB in five lines",
+   "body": "ChromaDB is an open-source vector database with a simple in-memory API, which makes it ideal for learning and prototypes. Create a client, attach a sentence-transformer embedding function such as all-MiniLM-L6-v2, add your documents with ids, and query the collection in natural language.",
+   "links": [
+    "https://blog.vectorlab.dev/posts/choosing-a-faiss-index",
+    "https://blog.vectorlab.dev/posts/hybrid-search-in-weaviate",
+    "https://wiki.searchpedia.org/wiki/Dense_retrieval"
+   ]
+  },
+  {
+   "url": "https://blog.vectorlab.dev/posts/choosing-a-faiss-index",
+   "type": "html",
+   "title": "Choosing a FAISS index: Flat, IVF, HNSW or PQ",
+   "body": "FAISS is a C++ library from Meta with Python bindings for similarity search over billions of vectors, with optional GPU acceleration. A Flat index compares the query with every vector and is exact. IVF clusters the vectors and probes only a few clusters. HNSW navigates a neighbor graph. PQ compresses vectors so that huge collections fit in memory.",
+   "links": [
+    "https://wiki.searchpedia.org/wiki/HNSW",
+    "https://wiki.searchpedia.org/wiki/Product_quantization",
+    "https://blog.vectorlab.dev/posts/chromadb-semantic-search-in-five-lines"
+   ]
+  },
+  {
+   "url": "https://blog.vectorlab.dev/posts/hybrid-search-in-weaviate",
+   "type": "html",
+   "title": "Hybrid search built into Weaviate",
+   "body": "Weaviate is a full vector database with a GraphQL API. Its hybrid query runs a keyword BM25 search and a vector search on the same collection and fuses the two result lists, with an alpha parameter that moves the balance between exact keyword matching and semantic similarity.",
+   "links": [
+    "https://wiki.searchpedia.org/wiki/Reciprocal_rank_fusion",
+    "https://blog.vectorlab.dev/posts/why-keyword-search-still-matters"
+   ]
+  },
+  {
+   "url": "https://blog.vectorlab.dev/posts/why-keyword-search-still-matters",
+   "type": "html",
+   "title": "Why keyword search still matters in 2026",
+   "body": "Embedding models understand paraphrases but stumble on product codes, rare names and exact phrases, where lexical matching shines. Combining keyword and semantic retrieval gives the best of both, which is why hybrid search has become the industry standard. Start with BM25 plus a dense retriever and merge them with reciprocal rank fusion.",
+   "links": [
+    "https://mirror.searchpedia.net/wiki/Okapi_BM25",
+    "https://wiki.searchpedia.org/wiki/Reciprocal_rank_fusion",
+    "https://wiki.searchpedia.org/wiki/Dense_retrieval"
+   ]
+  },
+  {
+   "url": "https://docs.fusionsearch.io/guide/ranking-pipeline.html",
+   "type": "html",
+   "title": "Multi-stage ranking pipeline",
+   "body": "FusionSearch ranks results in stages. A cheap first stage retrieves a few hundred candidates with BM25 and with a dense retriever. The two candidate lists are merged by hybrid fusion, and a cross-encoder reranks the top candidates, because a transformer that reads the query and the document together is too slow to run on the whole index.",
+   "links": [
+    "https://wiki.searchpedia.org/wiki/Reciprocal_rank_fusion",
+    "https://wiki.searchpedia.org/wiki/Cross-encoder",
+    "https://docs.fusionsearch.io/guide/query-understanding.html",
+    "https://docs.fusionsearch.io/download/fusionsearch-manual.pdf"
+   ]
+  },
+  {
+   "url": "https://docs.fusionsearch.io/guide/query-understanding.html",
+   "type": "html",
+   "title": "Query understanding: spelling, expansion and intent",
+   "body": "Before retrieval, the query processor normalizes the text, corrects spelling mistakes, expands the query with related terms, and detects intent: navigational queries look for a specific site, transactional queries want to download or do something, and informational queries seek knowledge.",
+   "links": [
+    "https://wiki.searchpedia.org/wiki/Spelling_correction",
+    "https://wiki.searchpedia.org/wiki/Query_expansion",
+    "https://docs.fusionsearch.io/guide/ranking-pipeline.html"
+   ]
+  },
+  {
+   "url": "https://docs.fusionsearch.io/download/fusionsearch-manual.pdf",
+   "type": "pdf",
+   "title": "FusionSearch Administrator Manual",
+   "body": "Installation and configuration guide. Explains how to deploy the crawler, schedule re-indexing, size the vector index, tune the alpha weight of hybrid fusion and set the reranking depth.",
+   "links": []
+  },
+  {
+   "url": "https://news.techharian.id/",
+   "type": "html",
+   "title": "TechHarian — Berita Teknologi dan Gaya Hidup",
+   "body": "Berita terbaru seputar teknologi, olahraga, kuliner dan perjalanan setiap hari.",
+   "links": [
+    "https://news.techharian.id/2026/10/resep-nasi-goreng-kampung",
+    "https://news.techharian.id/2026/10/cup-final-penalties",
+    "https://news.techharian.id/2026/10/bali-quiet-beaches",
+    "https://news.techharian.id/2026/10/phone-review-two-day-battery",
+    "https://news.techharian.id/2026/10/rank-fusion-explained",
+    "https://news.techharian.id/2026/10/mesin-pencari-lokal"
+   ]
+  },
+  {
+   "url": "https://news.techharian.id/2026/10/resep-nasi-goreng-kampung",
+   "type": "html",
+   "title": "Resep Nasi Goreng Kampung yang Sederhana",
+   "body": "Tumis bawang merah, bawang putih dan cabai hingga harum, masukkan telur, lalu nasi dingin. Tambahkan kecap manis, garam dan sedikit terasi. Sajikan dengan kerupuk dan acar mentimun.",
+   "links": [
+    "https://news.techharian.id/"
+   ]
+  },
+  {
+   "url": "https://news.techharian.id/2026/10/cup-final-penalties",
+   "type": "html",
+   "title": "Cup final decided by a penalty shootout",
+   "body": "The final ended level after extra time, and the home side won the shootout five to four after their goalkeeper saved the last penalty. The coach praised the players for their composure in front of a sold-out stadium.",
+   "links": [
+    "https://news.techharian.id/"
+   ]
+  },
+  {
+   "url": "https://news.techharian.id/2026/10/bali-quiet-beaches",
+   "type": "html",
+   "title": "Travel guide: ten quiet beaches in Bali",
+   "body": "Skip the crowded resorts and head for the quiet beaches on the east coast, where the sand is black and the water is calm. Visit early in the morning, bring cash for the small warungs, and respect the temples near the shore.",
+   "links": [
+    "https://news.techharian.id/"
+   ]
+  },
+  {
+   "url": "https://news.techharian.id/2026/10/phone-review-two-day-battery",
+   "type": "html",
+   "title": "Review: a mid-range phone with a two-day battery",
+   "body": "The new phone pairs a bright screen with a battery that lasts two days of normal use. The main camera is sharp in daylight but noisy at night, and the gallery app can search your photos when you describe what is in them.",
+   "links": [
+    "https://news.techharian.id/"
+   ]
+  },
+  {
+   "url": "https://news.techharian.id/2026/10/rank-fusion-explained",
+   "type": "html",
+   "title": "Reciprocal rank fusion",
+   "body": "Reciprocal rank fusion (RRF) merges the result lists of several retrievers. Each document receives the sum of 1 / (k + rank) over the lists in which it appears, with k usually set to 60. Because only positions are used, scores on different scales never need to be normalized, which makes RRF a robust default for hybrid search. Republished from Searchpedia.",
+   "links": [
+    "https://news.techharian.id/",
+    "https://wiki.searchpedia.org/wiki/Reciprocal_rank_fusion"
+   ]
+  },
+  {
+   "url": "https://news.techharian.id/2026/10/mesin-pencari-lokal",
+   "type": "html",
+   "title": "Mengapa Mesin Pencari Lokal Tetap Bertahan",
+   "body": "Google tidak selalu berjaya di seluruh dunia. Di Tiongkok, Baidu menjadi mesin pencari utama karena dukungan bahasa dan tulisan lokal yang lebih baik, sama seperti Renren, Weibo dan JiePang yang menggantikan layanan populer lainnya.",
+   "links": [
+    "https://news.techharian.id/"
+   ]
+  }
+ ],
+ "queries": [
+  {
+   "q": "how to merge rankings from several retrievers",
+   "rel": [
+    "https://wiki.searchpedia.org/wiki/Reciprocal_rank_fusion",
+    "https://news.techharian.id/2026/10/rank-fusion-explained",
+    "https://docs.fusionsearch.io/guide/ranking-pipeline.html",
+    "https://blog.vectorlab.dev/posts/why-keyword-search-still-matters"
+   ]
+  },
+  {
+   "q": "late interaction token level matching",
+   "rel": [
+    "https://wiki.searchpedia.org/wiki/ColBERT",
+    "https://ir.unikampus.ac.id/files/session-06-hybrid-search.ppt"
+   ]
+  },
+  {
+   "q": "store and search billions of embeddings",
+   "rel": [
+    "https://blog.vectorlab.dev/posts/chromadb-semantic-search-in-five-lines",
+    "https://blog.vectorlab.dev/posts/choosing-a-faiss-index",
+    "https://blog.vectorlab.dev/posts/hybrid-search-in-weaviate"
+   ]
+  },
+  {
+   "q": "fix misspelled words in a query",
+   "rel": [
+    "https://wiki.searchpedia.org/wiki/Spelling_correction",
+    "https://docs.fusionsearch.io/guide/query-understanding.html"
+   ]
+  },
+  {
+   "q": "bm25 term frequency saturation",
+   "rel": [
+    "https://wiki.searchpedia.org/wiki/Okapi_BM25",
+    "https://mirror.searchpedia.net/wiki/Okapi_BM25",
+    "https://ir.unikampus.ac.id/files/bm25-lecture-notes.pdf"
+   ]
+  },
+  {
+   "q": "crawler frontier and seed urls",
+   "rel": [
+    "https://wiki.searchpedia.org/wiki/Web_crawler",
+    "https://ir.unikampus.ac.id/materi/mesin-pencari.html"
+   ]
+  },
+  {
+   "q": "combine keyword and semantic search",
+   "rel": [
+    "https://blog.vectorlab.dev/posts/why-keyword-search-still-matters",
+    "https://blog.vectorlab.dev/posts/hybrid-search-in-weaviate",
+    "https://ir.unikampus.ac.id/materi/pencarian-hibrida.html",
+    "https://docs.fusionsearch.io/guide/ranking-pipeline.html",
+    "https://ir.unikampus.ac.id/files/session-06-hybrid-search.ppt"
+   ]
+  },
+  {
+   "q": "detect duplicate web pages",
+   "rel": [
+    "https://wiki.searchpedia.org/wiki/Near-duplicate_detection"
+   ]
+  },
+  {
+   "q": "approximate nearest neighbor graph index",
+   "rel": [
+    "https://wiki.searchpedia.org/wiki/HNSW",
+    "https://blog.vectorlab.dev/posts/choosing-a-faiss-index"
+   ]
+  },
+  {
+   "q": "rerank candidates with a transformer",
+   "rel": [
+    "https://wiki.searchpedia.org/wiki/Cross-encoder",
+    "https://docs.fusionsearch.io/guide/ranking-pipeline.html"
+   ]
+  },
+  {
+   "q": "cara kerja mesin pencari",
+   "rel": [
+    "https://ir.unikampus.ac.id/materi/mesin-pencari.html"
+   ]
+  }
+ ],
+ "notebook": {
+  "query": "cara mencari informasi relevan",
+  "docs": [
+   "sistem temu kembali informasi pencarian",
+   "pencarian semantik dengan deep learning",
+   "database relasional menggunakan SQL",
+   "machine learning untuk klasifikasi teks",
+   "search engine menggunakan inverted index"
+  ]
+ }
+}
