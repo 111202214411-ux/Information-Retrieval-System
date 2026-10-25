@@ -11,7 +11,7 @@ This project was built for **Session 7: Evaluating IR Models: Classic & Modern M
 **Information Retrieval Systems** course (*Sistem Temu Kembali Informasi*, STKI), together with the
 *Evaluasi* material (user happiness, benchmarks, precision, recall and accuracy).
 
-🔗 **Live demo:** *add the Streamlit link here after deploying*
+🔗 **Live demo:** https://information-retrieval-system-6sot3vl4oedinqb6xb9xtv.streamlit.app/
 
 ## View
 
