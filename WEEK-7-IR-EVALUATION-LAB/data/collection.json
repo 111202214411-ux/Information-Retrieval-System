@@ -1,0 +1,528 @@
+{
+ "domains": {
+  "S": "Search technology",
+  "H": "Health & nutrition",
+  "F": "Personal finance"
+ },
+ "documents": [
+  {
+   "id": "S01",
+   "domain": "Search technology",
+   "text": "In BM25 the parameter b scales term frequency by the ratio of document length to the average length, so long documents do not win just because they repeat words."
+  },
+  {
+   "id": "S02",
+   "domain": "Search technology",
+   "text": "BM25 is the default ranking function in Lucene and Elasticsearch."
+  },
+  {
+   "id": "S03",
+   "domain": "Search technology",
+   "text": "Pivoted length normalization corrects the bias of cosine normalization toward short documents."
+  },
+  {
+   "id": "S04",
+   "domain": "Search technology",
+   "text": "Test collections such as TREC pair documents and topics with human relevance judgments, so precision, recall and nDCG can be computed for any system."
+  },
+  {
+   "id": "S05",
+   "domain": "Search technology",
+   "text": "Online experiments compare two rankers by showing each to a share of users and measuring clicks and abandonment."
+  },
+  {
+   "id": "S06",
+   "domain": "Search technology",
+   "text": "Query logs reveal which searches are most frequent and when traffic peaks during the day."
+  },
+  {
+   "id": "S07",
+   "domain": "Search technology",
+   "text": "Did-you-mean suggestions pick dictionary words within a small edit distance of a mistyped query term and rank them by frequency."
+  },
+  {
+   "id": "S08",
+   "domain": "Search technology",
+   "text": "Autocomplete predicts the rest of a query from popular prefixes typed by other users."
+  },
+  {
+   "id": "S09",
+   "domain": "Search technology",
+   "text": "Dense retrievers encode queries and passages into vectors with a transformer and rank by cosine similarity, matching paraphrases that share no words."
+  },
+  {
+   "id": "S10",
+   "domain": "Search technology",
+   "text": "Approximate nearest neighbour indexes such as HNSW make vector search fast over millions of items."
+  },
+  {
+   "id": "S11",
+   "domain": "Search technology",
+   "text": "Latent semantic indexing applies singular value decomposition to the term-document matrix to uncover hidden topics."
+  },
+  {
+   "id": "S12",
+   "domain": "Search technology",
+   "text": "Postings lists are stored as gaps between document ids and encoded with variable-byte or Elias-gamma codes, shrinking the index several times."
+  },
+  {
+   "id": "S13",
+   "domain": "Search technology",
+   "text": "An inverted index maps each term to the list of documents that contain it."
+  },
+  {
+   "id": "S14",
+   "domain": "Search technology",
+   "text": "Image compression formats such as JPEG discard detail that the eye barely notices."
+  },
+  {
+   "id": "S15",
+   "domain": "Search technology",
+   "text": "A web crawler downloads pages by following links from a set of seed URLs."
+  },
+  {
+   "id": "H01",
+   "domain": "Health & nutrition",
+   "text": "A Mediterranean diet supplemented with extra-virgin olive oil reduced major cardiovascular events, including heart attacks and strokes, by about 30 percent in a large Spanish trial."
+  },
+  {
+   "id": "H02",
+   "domain": "Health & nutrition",
+   "text": "Monounsaturated fats such as those in olive oil lower LDL cholesterol, a major risk factor for coronary heart disease."
+  },
+  {
+   "id": "H03",
+   "domain": "Health & nutrition",
+   "text": "Olive oil has been part of Mediterranean cooking for thousands of years, and its flavour depends on the olive variety and the harvest."
+  },
+  {
+   "id": "H04",
+   "domain": "Health & nutrition",
+   "text": "A heart attack happens when blood flow to part of the heart muscle is blocked, usually by a clot in a coronary artery; call emergency services if chest pain spreads to the arm or jaw."
+  },
+  {
+   "id": "H05",
+   "domain": "Health & nutrition",
+   "text": "Replacing butter with plant oils rich in unsaturated fat is linked to fewer cardiac events in long-term cohort studies."
+  },
+  {
+   "id": "H06",
+   "domain": "Health & nutrition",
+   "text": "Vitamin D helps the gut absorb calcium, and in older adults with low levels, supplements taken with calcium modestly reduce the risk of hip fractures."
+  },
+  {
+   "id": "H07",
+   "domain": "Health & nutrition",
+   "text": "Sunlight on the skin lets the body make cholecalciferol, which is needed to keep the skeleton strong."
+  },
+  {
+   "id": "H08",
+   "domain": "Health & nutrition",
+   "text": "Calcium-rich foods include milk, yogurt, sardines and leafy greens."
+  },
+  {
+   "id": "H09",
+   "domain": "Health & nutrition",
+   "text": "Most adults need seven to nine hours of sleep per night; regularly sleeping less than seven hours is associated with weight gain, high blood pressure and poorer concentration."
+  },
+  {
+   "id": "H10",
+   "domain": "Health & nutrition",
+   "text": "Insomnia is difficulty falling or staying asleep, and cognitive behavioural therapy is the recommended first treatment."
+  },
+  {
+   "id": "H11",
+   "domain": "Health & nutrition",
+   "text": "Teenagers' body clocks shift later, so early school start times leave many of them chronically short of rest."
+  },
+  {
+   "id": "H12",
+   "domain": "Health & nutrition",
+   "text": "Brisk walking for 150 minutes a week lowers the risk of heart disease and type 2 diabetes and helps older adults stay independent."
+  },
+  {
+   "id": "H13",
+   "domain": "Health & nutrition",
+   "text": "In seniors, daily physical activity such as strolling or gardening slows the loss of muscle mass and improves balance, reducing falls."
+  },
+  {
+   "id": "H14",
+   "domain": "Health & nutrition",
+   "text": "Bacteria in dental plaque turn the sugar in soft drinks into acid that dissolves enamel, so frequent sipping of sweetened beverages raises the risk of cavities."
+  },
+  {
+   "id": "H15",
+   "domain": "Health & nutrition",
+   "text": "Fluoride toothpaste strengthens enamel and helps prevent caries."
+  },
+  {
+   "id": "F01",
+   "domain": "Personal finance",
+   "text": "Low-cost index funds and fractional shares let beginners invest small amounts each month and spread risk across many companies."
+  },
+  {
+   "id": "F02",
+   "domain": "Personal finance",
+   "text": "Automatic monthly transfers into a brokerage account build the habit of putting money aside, even if it is only a few dollars."
+  },
+  {
+   "id": "F03",
+   "domain": "Personal finance",
+   "text": "Stock prices move with company earnings, interest rates and investor sentiment."
+  },
+  {
+   "id": "F04",
+   "domain": "Personal finance",
+   "text": "The avalanche method pays the card with the highest interest rate first, while the snowball method clears the smallest balance first for motivation."
+  },
+  {
+   "id": "F05",
+   "domain": "Personal finance",
+   "text": "Moving a balance to a card with a 0% introductory rate can cut interest costs while you repay the principal."
+  },
+  {
+   "id": "F06",
+   "domain": "Personal finance",
+   "text": "Your credit score depends on payment history, utilization and the length of your credit history."
+  },
+  {
+   "id": "F07",
+   "domain": "Personal finance",
+   "text": "Financial planners usually suggest saving three to six months of essential expenses in an easily accessible account for emergencies."
+  },
+  {
+   "id": "F08",
+   "domain": "Personal finance",
+   "text": "A rainy-day cushion of cash protects you from borrowing when the car breaks down or you lose your job."
+  },
+  {
+   "id": "F09",
+   "domain": "Personal finance",
+   "text": "When inflation is higher than the interest a savings account pays, the purchasing power of the balance falls every year."
+  },
+  {
+   "id": "F10",
+   "domain": "Personal finance",
+   "text": "Central banks raise interest rates to cool an overheating economy."
+  },
+  {
+   "id": "F11",
+   "domain": "Personal finance",
+   "text": "Treasury inflation-protected securities adjust their principal with the consumer price index, preserving real value."
+  },
+  {
+   "id": "F12",
+   "domain": "Personal finance",
+   "text": "Buying a home builds equity but adds a down payment, mortgage interest, property taxes and maintenance; renting keeps flexibility and frees cash to invest."
+  },
+  {
+   "id": "F13",
+   "domain": "Personal finance",
+   "text": "The price-to-rent ratio compares home prices with annual rents, and a high ratio suggests renting is cheaper than owning."
+  },
+  {
+   "id": "F14",
+   "domain": "Personal finance",
+   "text": "House plants such as pothos and snake plants survive in low light."
+  },
+  {
+   "id": "F15",
+   "domain": "Personal finance",
+   "text": "Mortgage rates rose sharply in 2023, making monthly payments on new loans more expensive."
+  }
+ ],
+ "topics": [
+  {
+   "id": "T01",
+   "domain": "Search technology",
+   "query": "bm25 length normalization",
+   "need": "How does BM25 take document length into account?"
+  },
+  {
+   "id": "T02",
+   "domain": "Search technology",
+   "query": "evaluate search engine relevance",
+   "need": "Methods for measuring how relevant a search engine's results are."
+  },
+  {
+   "id": "T03",
+   "domain": "Search technology",
+   "query": "spelling correction queries",
+   "need": "How do search engines fix misspelled queries?"
+  },
+  {
+   "id": "T04",
+   "domain": "Search technology",
+   "query": "semantic search embeddings",
+   "need": "Retrieval that matches meaning with vector representations rather than exact words."
+  },
+  {
+   "id": "T05",
+   "domain": "Search technology",
+   "query": "inverted index compression",
+   "need": "Techniques for storing postings lists compactly."
+  },
+  {
+   "id": "T06",
+   "domain": "Health & nutrition",
+   "query": "olive oil heart attack effective",
+   "need": "I'm looking for information on whether using olive oil is effective at reducing your risk of heart attacks."
+  },
+  {
+   "id": "T07",
+   "domain": "Health & nutrition",
+   "query": "vitamin d bone health",
+   "need": "Does vitamin D supplementation make bones stronger or prevent fractures?"
+  },
+  {
+   "id": "T08",
+   "domain": "Health & nutrition",
+   "query": "how much sleep do adults need",
+   "need": "Recommended nightly sleep for adults and the effects of sleeping too little."
+  },
+  {
+   "id": "T09",
+   "domain": "Health & nutrition",
+   "query": "benefits of walking for older people",
+   "need": "Health effects of regular walking in elderly adults."
+  },
+  {
+   "id": "T10",
+   "domain": "Health & nutrition",
+   "query": "sugary drinks tooth decay",
+   "need": "Do sugary beverages cause dental cavities?"
+  },
+  {
+   "id": "T11",
+   "domain": "Personal finance",
+   "query": "how to start investing with little money",
+   "need": "Ways for a beginner with a small budget to begin investing."
+  },
+  {
+   "id": "T12",
+   "domain": "Personal finance",
+   "query": "pay off credit card debt",
+   "need": "Strategies to eliminate credit card balances."
+  },
+  {
+   "id": "T13",
+   "domain": "Personal finance",
+   "query": "emergency fund size",
+   "need": "How much money should be kept in an emergency fund?"
+  },
+  {
+   "id": "T14",
+   "domain": "Personal finance",
+   "query": "inflation effect on savings",
+   "need": "How rising prices erode the value of money kept in savings."
+  },
+  {
+   "id": "T15",
+   "domain": "Personal finance",
+   "query": "renting vs buying a house",
+   "need": "Comparing the costs and benefits of renting a home versus buying one."
+  }
+ ],
+ "qrels": {
+  "Judge A": {
+   "T01": {
+    "S01": 3,
+    "S03": 2,
+    "S02": 1
+   },
+   "T02": {
+    "S04": 3,
+    "S05": 2,
+    "S06": 1
+   },
+   "T03": {
+    "S07": 3,
+    "S08": 1
+   },
+   "T04": {
+    "S09": 3,
+    "S10": 2,
+    "S11": 2
+   },
+   "T05": {
+    "S12": 3,
+    "S13": 1
+   },
+   "T06": {
+    "H01": 3,
+    "H02": 2,
+    "H05": 2,
+    "H04": 1
+   },
+   "T07": {
+    "H06": 3,
+    "H07": 2,
+    "H08": 1
+   },
+   "T08": {
+    "H09": 3,
+    "H10": 1,
+    "H11": 1
+   },
+   "T09": {
+    "H12": 3,
+    "H13": 2
+   },
+   "T10": {
+    "H14": 3,
+    "H15": 1
+   },
+   "T11": {
+    "F01": 3,
+    "F02": 2,
+    "F03": 1
+   },
+   "T12": {
+    "F04": 3,
+    "F05": 2,
+    "F06": 1
+   },
+   "T13": {
+    "F07": 3,
+    "F08": 2
+   },
+   "T14": {
+    "F09": 3,
+    "F11": 2,
+    "F10": 1
+   },
+   "T15": {
+    "F12": 3,
+    "F13": 2,
+    "F15": 1
+   }
+  },
+  "Judge B": {
+   "T01": {
+    "S01": 3,
+    "S03": 2
+   },
+   "T02": {
+    "S04": 3,
+    "S05": 2
+   },
+   "T03": {
+    "S07": 3,
+    "S08": 1
+   },
+   "T04": {
+    "S09": 3,
+    "S10": 1,
+    "S11": 1
+   },
+   "T05": {
+    "S12": 3,
+    "S13": 1
+   },
+   "T06": {
+    "H01": 3,
+    "H02": 2,
+    "H05": 2,
+    "H03": 1
+   },
+   "T07": {
+    "H06": 3,
+    "H07": 2
+   },
+   "T08": {
+    "H09": 3,
+    "H11": 1
+   },
+   "T09": {
+    "H12": 3,
+    "H13": 2
+   },
+   "T10": {
+    "H14": 3,
+    "H15": 2
+   },
+   "T11": {
+    "F01": 3,
+    "F02": 2
+   },
+   "T12": {
+    "F04": 3,
+    "F05": 2,
+    "F06": 1
+   },
+   "T13": {
+    "F07": 3,
+    "F08": 1
+   },
+   "T14": {
+    "F09": 3,
+    "F11": 1
+   },
+   "T15": {
+    "F12": 3,
+    "F13": 3
+   }
+  }
+ },
+ "pool_note": "Each topic was judged against all 15 documents of its own domain; unjudged documents count as 0.",
+ "notebook": {
+  "relevant": [
+   "D1",
+   "D3",
+   "D5"
+  ],
+  "retrieved": [
+   "D1",
+   "D2",
+   "D3",
+   "D4",
+   "D5",
+   "D6",
+   "D7"
+  ],
+  "grades": [
+   3,
+   0,
+   2,
+   0,
+   1,
+   0,
+   0
+  ]
+ },
+ "slide_example": {
+  "qrels": {
+   "d1": 2,
+   "d3": 1,
+   "d5": 1
+  },
+  "run": [
+   [
+    "d1",
+    0.95
+   ],
+   [
+    "d2",
+    0.8
+   ],
+   [
+    "d3",
+    0.75
+   ],
+   [
+    "d4",
+    0.6
+   ],
+   [
+    "d5",
+    0.5
+   ]
+  ],
+  "printed": {
+   "nDCG@10": 0.9197,
+   "MAP": 0.8889,
+   "P@5": 0.6,
+   "R@5": 1.0
+  }
+ }
+}
