@@ -35,7 +35,7 @@ except ImportError:  # fallback: results update after pressing Enter
 BASE_DIR = Path(__file__).parent
 COVER_DIR = BASE_DIR / "covers"
 
-st.set_page_config(page_title="Bookshelf — Book Title Search", page_icon="📚", layout="wide")
+st.set_page_config(page_title="Bookshelf: Book Title Search", page_icon="📚", layout="wide")
 
 # Cloth colors for book spines and generated covers: (background, text)
 BINDINGS = [
