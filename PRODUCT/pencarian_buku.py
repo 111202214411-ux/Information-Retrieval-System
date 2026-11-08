@@ -1,5 +1,5 @@
 """
-Bookshelf — Book Title Search Engine (Streamlit)
+Bookshelf: Book Title Search Engine (Streamlit)
 ================================================
 Information Retrieval Systems course project.
 
