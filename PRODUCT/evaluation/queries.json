@@ -1,0 +1,314 @@
+[
+ {
+  "query": "Laskar Pelangi",
+  "category": "Judul lengkap",
+  "relevant": [
+   0
+  ],
+  "relevant_titles": [
+   "Laskar Pelangi (Andrea Hirata)"
+  ]
+ },
+ {
+  "query": "Bumi Manusia",
+  "category": "Judul lengkap",
+  "relevant": [
+   5
+  ],
+  "relevant_titles": [
+   "Bumi Manusia (Pramoedya Ananta Toer)"
+  ]
+ },
+ {
+  "query": "Slam Dunk",
+  "category": "Judul lengkap",
+  "relevant": [
+   72
+  ],
+  "relevant_titles": [
+   "Slam Dunk (Takehiko Inoue)"
+  ]
+ },
+ {
+  "query": "No Longer Human",
+  "category": "Judul lengkap",
+  "relevant": [
+   48
+  ],
+  "relevant_titles": [
+   "No Longer Human (Osamu Dazai)"
+  ]
+ },
+ {
+  "query": "The Great Gatsby",
+  "category": "Judul lengkap",
+  "relevant": [
+   60
+  ],
+  "relevant_titles": [
+   "The Great Gatsby (F. Scott Fitzgerald)"
+  ]
+ },
+ {
+  "query": "hujan",
+  "category": "Satu kata dari judul",
+  "relevant": [
+   21,
+   26
+  ],
+  "relevant_titles": [
+   "Hujan (Tere Liye)",
+   "Hujan Bulan Juni (Sapardi Djoko Damono)"
+  ]
+ },
+ {
+  "query": "bumi",
+  "category": "Satu kata dari judul",
+  "relevant": [
+   22,
+   5
+  ],
+  "relevant_titles": [
+   "Bumi (Tere Liye)",
+   "Bumi Manusia (Pramoedya Ananta Toer)"
+  ]
+ },
+ {
+  "query": "pulang",
+  "category": "Satu kata dari judul",
+  "relevant": [
+   18,
+   19
+  ],
+  "relevant_titles": [
+   "Pulang (Tere Liye)",
+   "Pulang (Leila S. Chudori)"
+  ]
+ },
+ {
+  "query": "cinta",
+  "category": "Satu kata dari judul",
+  "relevant": [
+   16,
+   17
+  ],
+  "relevant_titles": [
+   "Ayat-Ayat Cinta (Habiburrahman El Shirazy)",
+   "Ayat-Ayat Cinta 2 (Habiburrahman El Shirazy)"
+  ]
+ },
+ {
+  "query": "dilan",
+  "category": "Satu kata dari judul",
+  "relevant": [
+   27,
+   28,
+   29
+  ],
+  "relevant_titles": [
+   "Dilan: Dia adalah Dilanku Tahun 1990 (Pidi Baiq)",
+   "Dilan: Dia adalah Dilanku Tahun 1991 (Pidi Baiq)",
+   "Milea: Suara dari Dilan (Pidi Baiq)"
+  ]
+ },
+ {
+  "query": "laut menceritakan",
+  "category": "Kata berimbuhan / bentuk lain",
+  "relevant": [
+   20
+  ],
+  "relevant_titles": [
+   "Laut Bercerita (Leila S. Chudori)"
+  ]
+ },
+ {
+  "query": "bermimpi",
+  "category": "Kata berimbuhan / bentuk lain",
+  "relevant": [
+   1
+  ],
+  "relevant_titles": [
+   "Sang Pemimpi (Andrea Hirata)"
+  ]
+ },
+ {
+  "query": "terlindung kabah",
+  "category": "Kata berimbuhan / bentuk lain",
+  "relevant": [
+   33
+  ],
+  "relevant_titles": [
+   "Di Bawah Lindungan Ka'bah (Hamka)"
+  ]
+ },
+ {
+  "query": "pengasuhan",
+  "category": "Kata berimbuhan / bentuk lain",
+  "relevant": [
+   31
+  ],
+  "relevant_titles": [
+   "Salah Asuhan (Abdoel Moeis)"
+  ]
+ },
+ {
+  "query": "mengembang layar",
+  "category": "Kata berimbuhan / bentuk lain",
+  "relevant": [
+   32
+  ],
+  "relevant_titles": [
+   "Layar Terkembang (Sutan Takdir Alisjahbana)"
+  ]
+ },
+ {
+  "query": "pelangi laskar",
+  "category": "Urutan ditukar / kata tak lengkap",
+  "relevant": [
+   0
+  ],
+  "relevant_titles": [
+   "Laskar Pelangi (Andrea Hirata)"
+  ]
+ },
+ {
+  "query": "karamazov brothers",
+  "category": "Urutan ditukar / kata tak lengkap",
+  "relevant": [
+   44
+  ],
+  "relevant_titles": [
+   "The Brothers Karamazov (Fyodor Dostoevsky)"
+  ]
+ },
+ {
+  "query": "hujan juni",
+  "category": "Urutan ditukar / kata tak lengkap",
+  "relevant": [
+   26
+  ],
+  "relevant_titles": [
+   "Hujan Bulan Juni (Sapardi Djoko Damono)"
+  ]
+ },
+ {
+  "query": "note underground",
+  "category": "Urutan ditukar / kata tak lengkap",
+  "relevant": [
+   47
+  ],
+  "relevant_titles": [
+   "Notes from Underground (Fyodor Dostoevsky)"
+  ]
+ },
+ {
+  "query": "picture dorian",
+  "category": "Urutan ditukar / kata tak lengkap",
+  "relevant": [
+   63
+  ],
+  "relevant_titles": [
+   "The Picture of Dorian Gray (Oscar Wilde)"
+  ]
+ },
+ {
+  "query": "asu",
+  "category": "Potongan kata",
+  "relevant": [
+   31
+  ],
+  "relevant_titles": [
+   "Salah Asuhan (Abdoel Moeis)"
+  ]
+ },
+ {
+  "query": "kara",
+  "category": "Potongan kata",
+  "relevant": [
+   44
+  ],
+  "relevant_titles": [
+   "The Brothers Karamazov (Fyodor Dostoevsky)"
+  ]
+ },
+ {
+  "query": "gats",
+  "category": "Potongan kata",
+  "relevant": [
+   60
+  ],
+  "relevant_titles": [
+   "The Great Gatsby (F. Scott Fitzgerald)"
+  ]
+ },
+ {
+  "query": "orwe",
+  "category": "Potongan kata",
+  "relevant": [
+   52
+  ],
+  "relevant_titles": [
+   "Norwegian Wood (Haruki Murakami)"
+  ]
+ },
+ {
+  "query": "morpho",
+  "category": "Potongan kata",
+  "relevant": [
+   54
+  ],
+  "relevant_titles": [
+   "The Metamorphosis (Franz Kafka)"
+  ]
+ },
+ {
+  "query": "MISERABLES",
+  "category": "Inggris, aksen, huruf besar",
+  "relevant": [
+   64
+  ],
+  "relevant_titles": [
+   "Les Misérables (Victor Hugo)"
+  ]
+ },
+ {
+  "query": "les miserables",
+  "category": "Inggris, aksen, huruf besar",
+  "relevant": [
+   64
+  ],
+  "relevant_titles": [
+   "Les Misérables (Victor Hugo)"
+  ]
+ },
+ {
+  "query": "brother",
+  "category": "Inggris, aksen, huruf besar",
+  "relevant": [
+   44
+  ],
+  "relevant_titles": [
+   "The Brothers Karamazov (Fyodor Dostoevsky)"
+  ]
+ },
+ {
+  "query": "Old man sea",
+  "category": "Inggris, aksen, huruf besar",
+  "relevant": [
+   59
+  ],
+  "relevant_titles": [
+   "The Old Man and the Sea (Ernest Hemingway)"
+  ]
+ },
+ {
+  "query": "prince",
+  "category": "Inggris, aksen, huruf besar",
+  "relevant": [
+   69
+  ],
+  "relevant_titles": [
+   "The Little Prince (Antoine de Saint-Exupéry)"
+  ]
+ }
+]
