@@ -28,8 +28,6 @@ This project was built for the **Information Retrieval Systems** course
 - [Limitations](#limitations)
 - [References](#references)
 
----
-
 ## Features
 
 - **Search as you type.** Results update on every keystroke, no need to press Enter.
