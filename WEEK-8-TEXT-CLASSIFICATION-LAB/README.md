@@ -12,7 +12,7 @@ with the older decks *Klasifikasi Dokumen dengan Naive Bayes* and *Klasifikasi D
 K-Nearest Neighbor* and the notebooks `01-TFIDF`, `02-Klasifikasi Text Mining Naive Bayes` and
 `Pipeline-Klasifikasi Text Mining-NB-KNN`.
 
-🔗 **Live demo:** *add the Streamlit link here after deploying*
+🔗 **Live demo:** https://information-retrieval-system-hdq7u4mstku8w93zqpzkqg.streamlit.app/
 
 ## View
 
