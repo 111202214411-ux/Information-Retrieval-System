@@ -4,7 +4,7 @@ Coursework repository for the **Information Retrieval Systems** course
 (*Sistem Temu Kembali Informasi*, STKI) at Universitas Dian Nuswantoro. It holds two kinds of work:
 
 - **[`PRODUCT/`](PRODUCT/)**: the course's main project, *Bookshelf*, a book title search engine.
-- **`WEEK-1` to `WEEK-7`**: weekly progress. Each session of the course has its own
+- **`WEEK-1` to `WEEK-9`**: weekly progress. Each session of the course has its own
   interactive lab that puts that week's lecture material into practice.
 
 Every project is written in Python with Streamlit, runs on its own, and has a live demo and a
@@ -34,7 +34,9 @@ detailed README of its own.
 ├── WEEK-4-VECTOR-SPACE-LAB/         # Session 4: Vector space model & dense retrieval
 ├── WEEK-5-TERM-WEIGHTING-LAB/       # Session 5: Term weighting & learned sparse retrieval
 ├── WEEK-6-SEARCH-ENGINE-LAB/        # Session 6: Search engine architecture & hybrid search
-└── WEEK-7-IR-EVALUATION-LAB/        # Session 7: Evaluating IR models
+├── WEEK-7-IR-EVALUATION-LAB/        # Session 7: Evaluating IR models
+├── WEEK-8-TEXT-CLASSIFICATION-LAB/  # Session 8: Text classification (Naive Bayes, KNN, transformers)
+└── WEEK-9-TOPIC-MODELING-LAB/       # Session 9: Document clustering & neural topic modeling
 ```
 
 Each folder follows the same layout:
@@ -43,7 +45,7 @@ Each folder follows the same layout:
 |---|---|
 | `app.py` (or `pencarian_buku.py`) | Streamlit app (user interface) |
 | Other `.py` files | Retrieval logic, kept separate from the interface |
-| `data/` | Collections, stopword lists, or pretrained vectors used by the app |
+| `data/` | Collections, datasets, stopword lists, or pretrained vectors used by the app |
 | `docs/` | Screenshots used in the README |
 | `requirements.txt` | Python dependencies |
 | `README.md` | Full documentation: features, how it works, worked examples, limitations |
@@ -56,6 +58,8 @@ A book title search engine built on the **Vector Space Model (TF-IDF + Cosine Si
 Type a letter or a word from a book title and the matching books appear on a bookshelf, ordered by
 relevance. Click a book spine to see its cover and details.
 
+![Bookshelf view](PRODUCT/docs/bookshelf.png)
+
 - **Search as you type**, with no need to press Enter.
 - **Partial-word search**: `asu` finds *Salah Asuhan*, and the matched part is highlighted on the spine.
 - **Relevance ranking** by cosine similarity (leftmost book = rank 1).
@@ -64,20 +68,26 @@ relevance. Click a book spine to see its cover and details.
 - **Transparent process**: every retrieval step for the current query is shown, and the full
   inverted index can be browsed in the app.
 - **Corpus of 82 books**: Indonesian novels, world classics, Japanese literature, and manga.
+- **Evaluated** on 30 test queries against four simpler baselines (substring match, Boolean AND,
+  VSM with and without stemming). The deployed system ranks the wanted book first on all 30
+  queries (MAP and MRR 1.000, against 0.633 for the substring baseline).
 
 | File | Contents |
 |---|---|
 | `pencarian_buku.py` | Streamlit app (bookshelf interface) |
 | `ir.py` | Retrieval engine: preprocessing, stemming, inverted index, TF-IDF, cosine similarity |
 | `books.json` | Corpus: 82 books with title, author, genre, year, publisher, and cover |
+| `evaluation/` | 30 test queries with relevance judgments (`queries.json`) and the experiment script (`evaluate.py`) |
+| `docs/` | Screenshots used in the README |
+| `.streamlit/config.toml` | App color theme |
 | `requirements.txt` | Python dependencies |
 
 Full documentation: [`PRODUCT/README.md`](PRODUCT/README.md)
 
 ## Weekly progress
 
-One lab per session. Each one builds on the previous weeks, from a first mini search engine to a
-full search engine and its evaluation.
+One lab per session. Each one builds on the previous weeks: from a first mini search engine to a
+full search engine and its evaluation, then on to classifying and clustering text.
 
 | Week | Lab | Lecture topic | What it covers | Demo |
 |:---:|---|---|---|:---:|
@@ -88,6 +98,8 @@ full search engine and its evaluation.
 | 5 | [⚖️ Term Weighting Lab](WEEK-5-TERM-WEIGHTING-LAB/) | Term Weighting & Learned Sparse Retrieval | TF variants, BM25 term by term (effect of `k₁` and `b`), SPLADE, and BM25 + dense hybrid evaluated with P@5 and P@10 | [Open](https://information-retrieval-system-5mgtaeghbvah8u4n84vncb.streamlit.app/) |
 | 6 | [🔎 Search Engine Lab](WEEK-6-SEARCH-ENGINE-LAB/) | Search Engine Architecture & Hybrid Search | Full pipeline on a simulated web of 37 pages: crawling, deduplication, indexing, query understanding, BM25 + dense fusion, reranking, ColBERT late interaction, and vector database indexes | [Open](https://information-retrieval-system-kthsppovkbbjgn2cbebfjc.streamlit.app/) |
 | 7 | [📏 IR Evaluation Lab](WEEK-7-IR-EVALUATION-LAB/) | Evaluating IR Models: Classic & Modern Metrics | Precision, recall, F1, P@k, R@k, AP, MAP, MRR, nDCG on a TREC-style collection; significance tests; Cohen's κ; BEIR-style comparison and RAGAS-style RAG metrics | [Open](https://information-retrieval-system-6sot3vl4oedinqb6xb9xtv.streamlit.app/) |
+| 8 | [🏷️ Text Classification Lab](WEEK-8-TEXT-CLASSIFICATION-LAB/) | Text Classification with Naive Bayes, KNN & Transformers | Naive Bayes and KNN worked out by hand; the course notebook's sentiment experiment on 903 Indonesian COVID-19 tweets reproduced; sentence-transformer embeddings and SetFit few-shot learning; classify your own tweet with every model | [Open](https://information-retrieval-system-hdq7u4mstku8w93zqpzkqg.streamlit.app/) |
+| 9 | [🧭 Topic Modeling Lab](WEEK-9-TOPIC-MODELING-LAB/) | Document Clustering & Neural Topic Modeling | K-Means one iteration at a time; choosing K (elbow, silhouette); LDA; BERTopic step by step (embeddings → UMAP → HDBSCAN → c-TF-IDF by hand); all methods compared with coherence, diversity, ARI, and NMI | [Open](https://information-retrieval-system-ct9scgkchobhritgq4d7ym.streamlit.app/) |
 
 ## Learning path
 
@@ -99,6 +111,8 @@ Week 4  Vector space        ──► sparse, dense, and hybrid ranking
 Week 5  Term weighting      ──► TF-IDF, BM25, SPLADE
 Week 6  Search engine       ──► everything combined into one system
 Week 7  Evaluation          ──► measuring how good a system is
+Week 8  Classification      ──► sorting documents into known classes
+Week 9  Topic modeling      ──► finding groups and topics without labels
                                     │
                                     ▼
 PRODUCT  Bookshelf          ──► the concepts applied to a real search app
@@ -111,10 +125,12 @@ PRODUCT  Bookshelf          ──► the concepts applied to a real search app
 | [Python](https://www.python.org/) 3.10+ | All projects |
 | [Streamlit](https://streamlit.io/) | User interface and deployment |
 | pandas, NumPy, Altair | Tables, computation, and charts |
-| PySastrawi, NLTK, simplemma | Indonesian and English stemming, stopwords, lemmatization (Week 2, 4) |
+| scikit-learn | Naive Bayes, KNN, K-Means, LDA, and evaluation metrics (Week 8, 9) |
+| PySastrawi, NLTK, simplemma | Indonesian and English stemming, stopwords, lemmatization (Week 2, 4, 8) |
 | Hugging Face `tokenizers` | BPE and WordPiece subword tokenization (Week 2) |
 | GloVe (50d) | Pretrained word embeddings (Week 3 to 7) |
-| `sentence-transformers`, `transformers` | Dense retrieval and SPLADE (Week 4 to 7) |
+| `sentence-transformers`, `transformers` | Dense retrieval, SPLADE, SetFit, and BERTopic embeddings (Week 4 to 9) |
+| `umap-learn` | Dimensionality reduction for BERTopic (Week 9) |
 
 ## Running a project locally
 
@@ -148,7 +164,7 @@ Apps update automatically whenever changes are pushed to GitHub.
   Cambridge University Press.
 - Croft, W. B., Metzler, D., & Strohman, T. (2010). *Search Engines: Information Retrieval in
   Practice*. Addison-Wesley.
-- Lecture slides, Sessions 1 to 7, STKI Lecturer Team, Faculty of Computer Science,
+- Lecture slides, Sessions 1 to 9, STKI Lecturer Team, Faculty of Computer Science,
   Universitas Dian Nuswantoro.
 
 Each folder's README lists the references specific to that week.
