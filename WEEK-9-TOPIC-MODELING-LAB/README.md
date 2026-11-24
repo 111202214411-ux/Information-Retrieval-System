@@ -10,7 +10,7 @@ agreement with them.
 This project was built for **Session 9: Document Clustering & Neural Topic Modeling** of the
 **Information Retrieval Systems** course (*Sistem Temu Kembali Informasi*, STKI).
 
-🔗 **Live demo:** *add the Streamlit link here after deploying*
+🔗 **Live demo:** https://information-retrieval-system-ct9scgkchobhritgq4d7ym.streamlit.app/
 
 ## View
 
